@@ -25,6 +25,15 @@ h1 {
   text-align: center;
 }
 
+nav {
+  display: flex;
+  gap: 60px;
+  font-size: large;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  justify-content: center;
+}
+
 p {
   margin: 30px 0px; /*if the margin property have only 2 values, then the first value indicates the top and bottom, the other one is right and left.*/
 }
@@ -36,15 +45,6 @@ a {
 
 a.active {
   color: violet;
-}
-
-.main-navigation {
-  display: flex;
-  gap: 60px;
-  font-size: large;
-  border-bottom: 2px solid black;
-  padding: 20px;
-  justify-content: center;
 }
 
 .back-to-home {
@@ -83,5 +83,31 @@ a.active {
   flex-direction: column;
   text-align: center;
   border-top: 2px solid black;
-  padding: 20px;
+  padding: 5px;
+}
+
+/*Responsive Designing*/
+
+@media (max-width: 600px) {
+  main {
+    max-width: 90%;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  .profile-picture {
+    max-width: 40%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 1px;
+  }
 }

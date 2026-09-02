@@ -19,10 +19,24 @@ body {
   height: 100%;
 }
 
+.separator {
+  display: flex;
+  flex: 1; /*flex container use all remaining space*/
+}
+
+/*aside and main are flex (separator) childrens*/
+
+aside {
+  flex: 0 0 20%; /* aside gets a 20% flex-basis and won't grow or shrink */
+  border: thick double black; /*created a border around aside*/
+  border-radius: 20px;
+  margin: 10px; /*space between aside container and other items*/
+}
+
 main {
-  flex: 1;
+  flex: 1; /*all remaining space consumed by main*/
   margin: 40px;
-  max-width: 60%;
+  max-width: none;
   line-height: 30px;
   word-spacing: 2px;
   align-self: center;
@@ -82,8 +96,9 @@ figcaption {
 .back-to-home {
   display: inline-block;
   align-self: flex-start;
-  border: 2px solid black;
-  border-radius: 5%;
+  color: white;
+  background-color: brown;
+  border-radius: 8%;
   margin: 10px;
   padding: 5px;
 }

@@ -144,6 +144,10 @@ figcaption {
 /*Responsive Designing*/
 
 @media (max-width: 600px) {
+  aside {
+    display: none;
+  }
+
   main {
     max-width: 90%;
     margin: 20px;

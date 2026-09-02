@@ -98,6 +98,7 @@ img {
 
 .post-overview {
   max-width: 40%;
+  height: auto;
 }
 
 /*Responsive Designing*/
@@ -118,6 +119,11 @@ img {
 
   .profile-picture {
     max-width: 40%;
+    height: auto;
+  }
+
+  .post-overview {
+    max-width: 100%;
     height: auto;
   }
 }

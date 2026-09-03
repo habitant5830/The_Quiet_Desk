@@ -19,15 +19,17 @@ body {
   height: 100%;
 }
 
-.separator {
+.main-sections {
   display: flex;
   flex: 1; /*flex container use all remaining space*/
 }
 
-/*aside and main are flex (separator) childrens*/
+/*aside and main are flex (main-sections) childrens*/
 
 aside {
   flex: 0 0 20%; /* aside gets a 20% flex-basis and won't grow or shrink */
+  display: flex;
+  flex-direction: column;
   border: thick double black; /*created a border around aside*/
   border-radius: 20px;
   margin: 10px; /*space between aside container and other items*/
@@ -94,6 +96,30 @@ figcaption {
   text-align: center;
 }
 
+.home {
+  align-self: normal;
+}
+
+.about {
+  align-self: normal;
+}
+
+.input-box {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 20px;
+  font-size: large;
+}
+
+.recent-posts {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 20px;
+  font-size: large;
+}
+
 .back-to-home {
   display: inline-block;
   align-self: flex-start;
@@ -109,9 +135,9 @@ figcaption {
 }
 
 .profile-picture {
-  width: 200px;
-  height: 200px;
-  margin: 30px;
+  width: 500px;
+  height: 500px;
+  margin: 70px;
 }
 
 .post-overview {

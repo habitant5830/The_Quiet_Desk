@@ -120,6 +120,14 @@ figcaption {
   font-size: large;
 }
 
+.tags {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 20px;
+  font-size: large;
+}
+
 .back-to-home {
   display: inline-block;
   align-self: flex-start;
@@ -135,9 +143,9 @@ figcaption {
 }
 
 .profile-picture {
-  width: 500px;
-  height: 500px;
-  margin: 70px;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
 }
 
 .post-overview {

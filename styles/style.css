@@ -27,7 +27,7 @@ body {
 /*aside and main are flex (main-sections) childrens*/
 
 aside {
-  flex: 0 0 20%; /* aside gets a 20% flex-basis and won't grow or shrink */
+  flex: 0 0 10%; /* aside gets a 20% flex-basis and won't grow or shrink */
   display: flex;
   flex-direction: column;
   border: thick double black; /*created a border around aside*/
@@ -52,6 +52,10 @@ h1 {
   line-height: 60px;
 }
 
+h3 {
+  margin: 0;
+}
+
 nav {
   display: flex;
   gap: 60px;
@@ -62,7 +66,7 @@ nav {
 }
 
 p {
-  margin: 30px 0px; /*if the margin property have only 2 values, then the first value indicates the top and bottom, the other one is right and left.*/
+  margin: 0;
 }
 
 a {
@@ -82,6 +86,7 @@ footer {
 
 img {
   max-width: 100%;
+  width: auto;
   height: auto;
   margin: 0;
   border-radius: 20px;
@@ -96,6 +101,10 @@ figcaption {
   text-align: center;
 }
 
+.sidebar-post {
+  margin: 5px;
+}
+
 .home {
   align-self: normal;
 }
@@ -107,25 +116,22 @@ figcaption {
 .input-box {
   border: 2px solid black;
   border-radius: 20px;
-  margin: 30px;
-  padding: 20px;
-  font-size: large;
+  margin: 10px;
+  padding: 10px;
 }
 
 .recent-posts {
   border: 2px solid black;
   border-radius: 20px;
-  margin: 30px;
-  padding: 20px;
-  font-size: large;
+  margin: 10px;
+  padding: 10px;
 }
 
 .tags {
   border: 2px solid black;
   border-radius: 20px;
-  margin: 30px;
-  padding: 20px;
-  font-size: large;
+  margin: 10px;
+  padding: 10px;
 }
 
 .back-to-home {
@@ -150,14 +156,14 @@ figcaption {
 
 .post-overview {
   display: grid;
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
   gap: 40px;
   max-width: 80%;
 }
 
 .post-preview {
   border: 2px solid black;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   border-radius: 20px;
 }

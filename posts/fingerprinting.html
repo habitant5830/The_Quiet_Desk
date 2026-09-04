@@ -101,7 +101,7 @@
           </figure>
 
           <div>
-            <p>
+            <p class="article">
               Nowadays online privacy is almost dead. Even in the comfort and
               dopamine loop we get from social media and the web, we also
               started to forget about the importance of privacy on the web. A
@@ -110,7 +110,7 @@
               Our every move is cleverly traced and kept for years without any
               security at all.
             </p>
-            <p>
+            <p class="article">
               One of the most effective methods used to identify a person and
               the device he uses is fingerprinting. "Fingerprinting" isn't just
               a word that indicates something, but it is the pipe they use to
@@ -121,7 +121,7 @@
               story.
             </p>
             <h2>What is fingerprinting?</h2>
-            <p>
+            <p class="article">
               It is a method used to identify a particular browser, extension,
               hardware, or user by collecting and combining various data like
             </p>
@@ -136,8 +136,8 @@
               <li>Browser window size</li>
               <li>Using an operating system</li>
             </ul>
-            <p>and much more data.</p>
-            <p>
+            <p class="article">and much more data.</p>
+            <p class="article">
               They collect it and combine it to identify users at different
               browsing sessions or even for cross-browser tracking.
             </p>
@@ -145,26 +145,26 @@
               Is this much data directly provided to every website we visit by
               default?
             </h3>
-            <p>
+            <p class="article">
               Yes, of course. All this data is automatically collected and
               stored on the server when we visit websites with our most used
               browsers (Chrome, Edge, Firefox, etc.). It’s not cookies; it’s
               creepier and permanent compared to it.
             </p>
-            <p>
+            <p class="article">
               But some other privacy-focused browsers (Mullvad, LibreWolf, Tor
               Browser, Brave Origin, etc.) prevent most of this data from
               getting leaked to websites we visit. Or they just spoof the values
               with a fake one, so the collected data becomes useless.
             </p>
             <h2>JavaScript: The Real Danger</h2>
-            <p>
+            <p class="article">
               JavaScript is a scripting language we use to write scripts. It
               provides added functionality to browsers and websites. What else
               can a normal scripting language do other than build some scripts.
               Right?
             </p>
-            <p>
+            <p class="article">
               Not at all. JavaScript is the tool all these websites use to
               harvest this much information from our devices. JavaScript is very
               useful, and at the same time it exposes a lot more than we can
@@ -176,24 +176,24 @@
               screen size, timezone, etc.
             </blockquote>
             <h3>Types of fingerprinting using JavaScript.</h3>
-            <p>
+            <p class="article">
               Imagine JavaScript is giving a tiny task to your computer. By
               analysing the way user's system process the task, JavaScript
               measures specific hardware on the system that is used to complete
               the task.
             </p>
-            <p>
+            <p class="article">
               Look at some fingerprinting methods effectively usable and
               continuously used with the help of JavaScript.
             </p>
             <h3>1. Canvas fingerprinting (2D Graphics)</h3>
-            <ul>
-              <li>
-                Canvas is an HTML5 element used to draw 2D graphics and text
-                directly on a webpage.
-              </li>
-            </ul>
-            <p><strong>How does fingerprinting work?</strong></p>
+
+            <p class="article">
+              Canvas is an HTML5 element used to draw 2D graphics and text
+              directly on a webpage.
+            </p>
+
+            <h4>How does fingerprinting work?</h4>
             <ul>
               <li>
                 JavaScript asks the browser to draw a 2D image with specific
@@ -216,13 +216,14 @@
                 into a text hash, creating a unique code.
               </li>
             </ul>
+
             <h3>2. WebGL fingerprinting (3D Graphics)</h3>
-            <ul>
-              <li>
-                WebGL is a browser API that allows sites to render 3D graphics.
-              </li>
-            </ul>
-            <p><strong>How does fingerprinting work?</strong></p>
+            <p class="article">
+              WebGL is a browser API that allows sites to render 3D graphics.
+            </p>
+
+            <h4>How does fingerprinting work?</h4>
+
             <ul>
               <li>
                 WebGL just directly asks the user's system for its GPU's
@@ -236,17 +237,16 @@
                 difference between GPU renderings and stores it.
               </li>
             </ul>
+
             <h3>3. WebGPU fingerprinting</h3>
-            <ul>
-              <li>WebGPU is an improved version of WebGL.</li>
-            </ul>
-            <ul>
-              <li>
-                It does exactly what WebGPU does but with more added
-                capabilities like low CPU overhead, multi-threading, etc.
-              </li>
-            </ul>
-            <p><strong>How does fingerprinting work?</strong></p>
+            <p class="article">WebGPU is an improved version of WebGL.</p>
+
+            <p class="article">
+              It does exactly what WebGPU does but with more added capabilities
+              like low CPU overhead, multi-threading, etc.
+            </p>
+
+            <h4>How does fingerprinting work?</h4>
             <ul>
               <li>
                 WebGPU sits closer to actual hardware, which means it transmits
@@ -266,13 +266,13 @@
               </li>
             </ul>
             <h3>4. Audio fingerprinting</h3>
-            <ul>
-              <li>
-                The web audio API allows browsers to generate, process, and play
-                audio directly in the browser.
-              </li>
-            </ul>
-            <p><strong>How does fingerprinting work?</strong></p>
+            <p class="article">
+              The web audio API allows browsers to generate, process, and play
+              audio directly in the browser.
+            </p>
+
+            <h4>How does fingerprinting work?</h4>
+
             <ul>
               <li>
                 A script sends a silent sound wave through standard audio tools
@@ -298,12 +298,11 @@
               <li>The web audio API script notices and records it.</li>
             </ul>
             <h3>5. Font fingerprinting</h3>
-            <ul>
-              <li>
-                A technique used to detect all installed fonts on the system.
-              </li>
-            </ul>
-            <p><strong>How does fingerprinting work?</strong></p>
+            <p class="article">
+              A technique used to detect all installed fonts on the system.
+            </p>
+
+            <h4>How does fingerprinting work?</h4>
             <ul>
               <li>
                 A script writes hidden text snippets on a page using
@@ -324,44 +323,44 @@
               </li>
             </ul>
             <h3>6. Other common fingerprinting methods</h3>
-            <p>
+            <p class="article">
               JavaScript uses every possible way to collect much data from the
               website other than graphics and audio.
             </p>
-            <p><strong>Hardware specs</strong></p>
-            <ul>
-              <li>Collects the CPU's exact core count and system RAM</li>
-            </ul>
-            <p><strong>Screen &amp; display parameters</strong></p>
-            <ul>
-              <li>
-                Collects screen width, height, available workspaces, color
-                depth, pixel density, etc.
-              </li>
-            </ul>
-            <p><strong>TLS/Network handshake</strong></p>
-            <ul>
-              <li>
-                Collects the order and types of encryption cipher the connected
-                HTTPS network support
-              </li>
-            </ul>
+            <h4>6.1 Hardware specs</h4>
+            <p class="article">
+              Collects the CPU's exact core count and system RAM
+            </p>
+            <h4>6.2 display parameters</h4>
+            <p class="article">
+              Collects screen width, height, available workspaces, color depth,
+              pixel density, etc.
+            </p>
+
+            <h4>6.3 TLS/Network handshake</h4>
+
+            <p class="article">
+              Collects the order and types of encryption cipher the connected
+              HTTPS network support
+            </p>
+
+            <p></p>
             <blockquote>
               This is completely doable without Javascript too.
             </blockquote>
-            <p><strong>Time zone</strong></p>
-            <ul>
-              <li>
-                Collects system preferences regarding language, timezone,
-                keyboard layouts, etc.
-              </li>
-            </ul>
+            <h4>6.4 Time zone</h4>
+
+            <p class="article">
+              Collects system preferences regarding language, timezone, keyboard
+              layouts, etc.
+            </p>
+
             <h3>From Fingerprints to Individual Data Profiles</h3>
-            <p>
+            <p class="article">
               All this fingerprinting is done using a single scripting language,
               JavaScript, by a single website.
             </p>
-            <p>
+            <p class="article">
               With all these collected metrics, the site now knows almost
               everything about the visitor's device and browser he used. So it
               combines all the collected information into a single profile to
@@ -447,12 +446,12 @@
             </blockquote>
             <h3>Privacy-hardened browsers.</h3>
             <ul>
-              <li>
+              <p class="article">
                 Many community-maintained browsers come out of the box with
                 tweaks for privacy, including fingerprinting protection.
-              </li>
+              </p>
             </ul>
-            <p><strong>Recommended Browsers</strong></p>
+            <h4>Recommended Browsers</h4>
             <ul>
               <li>Tor Browser (the king)</li>
               <li>Librewolf</li>
@@ -493,7 +492,9 @@
               protection against fingerprinting at all. But it can be tweaked
               for effective fingerprint resistance.
             </blockquote>
-            <p>There are various user.js files available to harden Firefox.</p>
+            <p class="article">
+              There are various user.js files available to harden Firefox.
+            </p>
             <ol>
               <li>
                 <a href="https://github.com/yokoffing/Betterfox">Betterfox</a>
@@ -506,39 +507,30 @@
               </li>
             </ol>
             <h2>How to test your fingerprint detection score?</h2>
-            <p>
+            <p class="article">
               These are various free tools online to check how much the browser
               you use exposes about you.
             </p>
-            <p>
-              <strong
-                ><a href="https://coveryourtracks.eff.org/"
-                  >Cover Your Tracks</a
-                ></strong
-              >
-            </p>
+            <h3>
+              <a href="https://coveryourtracks.eff.org/">Cover Your Tracks</a>
+            </h3>
+
             <ul>
               <li>Founded by the Electronic Frontier Foundation.</li>
               <li>
                 Shows a detailed summary on what was protected and what was not.
               </li>
             </ul>
-            <p>
-              <strong><a href="https://amiunique.org/">Am I Unique</a></strong>
-            </p>
+            <h3><a href="https://amiunique.org/">Am I Unique</a></h3>
             <ul>
               <li>
                 Gives fingerprinting details based on your current settings and
                 setup.
               </li>
             </ul>
-            <p>
-              <strong
-                ><a href="https://abrahamjuliot.github.io/creepjs/"
-                  >CreepJS</a
-                ></strong
-              >
-            </p>
+            <h3>
+              <a href="https://abrahamjuliot.github.io/creepjs/">CreepJS</a>
+            </h3>
             <ul>
               <li>
                 It dives deep into systems graphics drivers, WebGL, system
@@ -547,37 +539,37 @@
                 fingerprinting.
               </li>
             </ul>
-            <br /><br />
-            <p>Hope you find this article useful.</p>
-            <p>Thank you for reading.</p>
+            <hr />
+            <p class="article">Hope you find this article useful.</p>
+            <p class="article">Thank you for reading.</p>
+
+            <footer class="footer">
+              <p>A site simply built using HTML & CSS</p>
+              <div class="social-links">
+                <a href="https://github.com/habitant5830"
+                  ><img src="../images/social/github.svg" alt="Github"
+                /></a>
+
+                <a href="https://mastodon.social/@cymbal8240"
+                  ><img src="../images/social/mastodon.svg" alt="Mastodon"
+                /></a>
+
+                <a href="https://lemmy.ca/u/Crumpled6273"
+                  ><img src="../images/social/lemmy.svg" alt="Lemmy"
+                /></a>
+
+                <a href="https://rightbay.se/tapestry7912"
+                  ><img src="../images/social/pixelfed.svg" alt="Pixelfed"
+                /></a>
+
+                <a href="https://minddump-5f4.pages.dev/"
+                  ><img src="../images/social/blog.svg" alt="Blog"
+                /></a>
+              </div>
+            </footer>
           </div>
         </article>
       </main>
     </section>
-
-    <footer class="footer">
-      <p>A site simply built using HTML & CSS</p>
-      <div class="social-links">
-        <a href="https://github.com/habitant5830"
-          ><img src="../images/social/github.svg" alt="Github"
-        /></a>
-
-        <a href="https://mastodon.social/@cymbal8240"
-          ><img src="../images/social/mastodon.svg" alt="Mastodon"
-        /></a>
-
-        <a href="https://lemmy.ca/u/Crumpled6273"
-          ><img src="../images/social/lemmy.svg" alt="Lemmy"
-        /></a>
-
-        <a href="https://rightbay.se/tapestry7912"
-          ><img src="../images/social/pixelfed.svg" alt="Pixelfed"
-        /></a>
-
-        <a href="https://minddump-5f4.pages.dev/"
-          ><img src="../images/social/blog.svg" alt="Blog"
-        /></a>
-      </div>
-    </footer>
   </body>
 </html>

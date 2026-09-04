@@ -52,10 +52,6 @@ h1 {
   line-height: 60px;
 }
 
-h3 {
-  margin: 0;
-}
-
 nav {
   display: flex;
   gap: 60px;

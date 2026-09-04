@@ -41,6 +41,8 @@ main {
   align-self: center;
 }
 
+/* scrollbar */
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -59,7 +61,7 @@ main {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: aqua;
+  background: red;
 }
 
 blockquote {
@@ -68,12 +70,12 @@ blockquote {
 
 nav {
   display: flex;
-  gap: 50px;
+  position: relative;
+  gap: 80px;
   font-weight: bold;
   font-size: medium;
   border-bottom: thick double black;
   padding: 10px;
-  justify-content: center;
 }
 
 p.article {
@@ -89,7 +91,18 @@ a.active {
   color: darkblue;
 }
 
+/* link states */
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: darkred;
+}
+
 footer {
+  max-width: 80%;
   text-align: center;
   border-top: thick double black;
   margin: 0;
@@ -100,6 +113,11 @@ img {
   width: auto;
   height: auto;
   margin: 0;
+}
+
+img.header-logo {
+  width: 30px;
+  height: auto;
 }
 
 figcaption {

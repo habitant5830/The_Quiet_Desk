@@ -83,6 +83,8 @@ blockquote {
 nav {
   display: flex;
   gap: 50px;
+  font-weight: bold;
+  font-size: medium;
   border-bottom: thick double black;
   padding: 10px;
   justify-content: center;

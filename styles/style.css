@@ -71,7 +71,7 @@ blockquote {
 nav {
   display: flex;
   position: relative;
-  gap: 80px;
+  gap: 5%;
   font-weight: bold;
   font-size: medium;
   border-bottom: thick double black;
@@ -169,11 +169,17 @@ blockquote {
   margin: 40px;
 }
 
-table,
+table {
+  border: 3px solid black;
+  padding: 5px;
+  margin: 80px;
+  justify-self: center;
+}
+
 th,
 tr,
 td {
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 20px;
   margin: 80px;
   justify-self: center;
@@ -237,5 +243,12 @@ td {
     flex-direction: column;
     max-width: 100%;
     height: auto;
+  }
+
+  table,
+  th,
+  tr,
+  td {
+    margin: 20px;
   }
 }

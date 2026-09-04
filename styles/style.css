@@ -154,6 +154,7 @@ blockquote {
 .profile-picture {
   width: 150px;
   height: 150px;
+  margin: 40px;
 }
 
 .post-overview {

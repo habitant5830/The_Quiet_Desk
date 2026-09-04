@@ -152,8 +152,8 @@ blockquote {
 }
 
 .profile-picture {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin: 40px;
 }
 
@@ -226,8 +226,9 @@ blockquote {
   }
 
   .profile-picture {
-    max-width: 20%;
+    max-width: 40%;
     height: auto;
+    margin: 20px;
   }
 
   .post-overview {

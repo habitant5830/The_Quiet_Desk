@@ -159,13 +159,6 @@ blockquote {
   padding: 10px;
 }
 
-.back-to-home {
-  display: inline-block;
-  align-self: flex-start;
-  margin: 10px;
-  padding: 5px;
-}
-
 .profile {
   text-align: center;
 }

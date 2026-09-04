@@ -65,8 +65,10 @@ nav {
   justify-content: center;
 }
 
-p {
+p.article {
   margin: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 a {
@@ -101,13 +103,13 @@ figcaption {
   text-align: center;
 }
 
-.sidebar-post {
-  margin: 5px;
+blockquote {
+  font-weight: bold;
+  font-style: italic;
 }
 
-.paragraph-section {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.sidebar-post {
+  margin: 5px;
 }
 
 .home {

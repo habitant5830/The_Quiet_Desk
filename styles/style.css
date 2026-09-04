@@ -102,7 +102,7 @@ a:active {
 }
 
 footer {
-  max-width: 80%;
+  max-width: 100%;
   text-align: center;
   border-top: thick double black;
   margin: 0;
@@ -167,6 +167,20 @@ blockquote {
   width: 200px;
   height: 200px;
   margin: 40px;
+}
+
+table,
+th,
+tr,
+td {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 80px;
+  justify-self: center;
+}
+
+.emoji {
+  text-align: center;
 }
 
 .post-overview {

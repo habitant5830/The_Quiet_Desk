@@ -105,6 +105,11 @@ figcaption {
   margin: 5px;
 }
 
+.paragraph-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .home {
   align-self: normal;
 }
@@ -149,9 +154,8 @@ figcaption {
 }
 
 .profile-picture {
-  width: 200px;
-  height: 200px;
-  margin: 30px;
+  width: 150px;
+  height: 150px;
 }
 
 .post-overview {

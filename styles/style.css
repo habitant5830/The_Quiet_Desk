@@ -27,7 +27,7 @@ body {
 /*aside and main are flex (main-sections) childrens*/
 
 aside {
-  flex: 0 0 10%; /* aside gets a 20% flex-basis and won't grow or shrink */
+  flex: 0 0 15%; /* aside gets a 20% flex-basis and won't grow or shrink */
   display: flex;
   flex-direction: column;
   border: thick double black; /*created a border around aside*/
@@ -37,12 +37,12 @@ aside {
 
 main {
   flex: 1; /*all remaining space consumed by main*/
-  margin: 40px;
+  margin: 10px;
   max-width: none;
-  line-height: 30px;
-  word-spacing: 2px;
+  line-height: 20px;
+  word-spacing: 1px;
   align-self: center;
-  text-align: justify;
+  text-align: match-parent;
 }
 
 h1 {
@@ -52,19 +52,41 @@ h1 {
   line-height: 60px;
 }
 
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 nav {
   display: flex;
-  gap: 60px;
-  font-size: large;
+  gap: 50px;
   border-bottom: thick double black;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
 }
 
 p.article {
-  margin: 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 a {
@@ -222,7 +244,7 @@ blockquote {
   }
 
   nav {
-    gap: 10px;
+    gap: 20px;
   }
 
   .profile-picture {

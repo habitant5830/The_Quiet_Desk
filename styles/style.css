@@ -109,7 +109,7 @@ footer {
   max-width: 100%;
   text-align: center;
   border-top: thick double black;
-  margin: 0;
+  padding: 10px;
 }
 
 img {

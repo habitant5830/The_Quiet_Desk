@@ -231,6 +231,18 @@ td.emoji {
   text-align: center;
 }
 
+.trash-bin-page {
+  border-left: 5px double red;
+  border-right: 5px double blue;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+main.trash-bin {
+  margin: 5% 10%;
+  line-height: 30px;
+}
+
 .trash-button {
   display: flex;
   border: 3px solid black;
@@ -315,5 +327,12 @@ td.emoji {
   tr,
   td {
     margin: 20px;
+  }
+
+  .trash-bin-page {
+    border-left: 5px double red;
+    border-right: 5px double blue;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }

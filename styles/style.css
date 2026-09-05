@@ -66,12 +66,14 @@ main {
 
 blockquote {
   margin: 0;
+  font-weight: bold;
+  font-style: italic;
 }
 
 nav {
   display: flex;
   position: relative;
-  gap: 5%;
+  gap: 30px;
   font-weight: bold;
   font-size: medium;
   border-bottom: thick double black;
@@ -102,6 +104,8 @@ a:active {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   max-width: 100%;
   text-align: center;
   border-top: thick double black;
@@ -116,17 +120,12 @@ img {
 }
 
 img.header-logo {
-  width: 30px;
+  width: 21px;
   height: auto;
 }
 
 figcaption {
   text-align: center;
-}
-
-blockquote {
-  font-weight: bold;
-  font-style: italic;
 }
 
 .sidebar-post {
@@ -139,6 +138,16 @@ blockquote {
 
 .about {
   align-self: normal;
+}
+
+.privacy {
+  align-self: normal;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
 }
 
 .input-box {

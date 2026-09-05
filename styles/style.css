@@ -161,23 +161,54 @@ figcaption {
   margin: 40px;
 }
 
+/* table customization */
+
 table {
+  width: 80%;
+  height: auto;
   border: 3px solid black;
   padding: 5px;
   margin: 80px;
   justify-self: center;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: center;
+  font-size: larger;
 }
 
 th,
-tr,
 td {
   border: 3px solid black;
-  padding: 20px;
+  padding: 15px 20px;
+  text-align: left;
   margin: 80px;
   justify-self: center;
 }
 
-.emoji {
+th {
+  background-color: orangered;
+  color: white;
+}
+
+tr {
+  background-color: beige;
+}
+
+tr:hover {
+  background-color: aquamarine;
+}
+
+tr:nth-child(even) {
+  background-color: aliceblue;
+}
+
+tr:nth-child(even):hover {
+  background-color: aquamarine;
+}
+
+td.emoji {
   text-align: center;
 }
 

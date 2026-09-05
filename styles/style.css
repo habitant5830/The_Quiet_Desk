@@ -194,6 +194,7 @@ th {
 
 tr {
   background-color: beige;
+  color: black;
 }
 
 tr:hover {

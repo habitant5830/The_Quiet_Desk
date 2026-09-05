@@ -62,11 +62,16 @@ blockquote {
 nav {
   display: flex;
   position: relative;
-  gap: 30px;
   font-weight: bold;
-  font-size: medium;
+  gap: 10%;
+  justify-content: center;
+  font-size: large;
   border-bottom: thick double black;
   padding: 10px;
+}
+
+nav a {
+  max-width: fit-content;
 }
 
 p.article {

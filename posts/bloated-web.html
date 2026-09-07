@@ -1,0 +1,322 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>The Quiet Desk</title>
+    <meta
+      name="description"
+      description="A personal corner to dump my thoughts and opinions on tech, privacy,
+          Linux, and whatever else I’m into."
+    />
+    <meta name="author" content="MindDump009" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../posts.html">Posts</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </header>
+
+    <section class="main-sections">
+      <aside>
+        <input class="input-box" type="text" placeholder="Search" />
+        <div class="recent-posts">
+          <h5>Recent Posts</h5>
+          <ul>
+            <li>
+              <article class="sidebar-post">
+                <h3>
+                  <a href="../posts/domain-name-system.html">
+                    DNS: The Phonebook of the Internet
+                  </a>
+                </h3>
+                <p>
+                  Explaining how DNS works and why its important to choose a
+                  secure DNS provider!
+                </p>
+                <p></p>
+              </article>
+            </li>
+
+            <li>
+              <article class="sidebar-post">
+                <h3>
+                  <a href="../posts/encryption.html"
+                    >How Encryption Powers the Internet.</a
+                  >
+                </h3>
+                <p>
+                  Taking a deep dive into the working of encryption on the
+                  modern web.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="sidebar-post">
+                <h3>
+                  <a href="../posts/fingerprinting.html">
+                    Fingerprinting: The Hidden Trap on the Modern Web
+                  </a>
+                </h3>
+                <p>
+                  Explained various fingerprinting methods used in the modern
+                  web and what to do about it.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="tags">
+          <h5>Tags</h5>
+          <ul>
+            <li>Linux</li>
+            <li>Privacy</li>
+            <li>Firefox</li>
+            <li>Internet</li>
+            <li>Tracking</li>
+          </ul>
+        </div>
+      </aside>
+
+      <main>
+        <h2 id="why-modern-web-is-so-heavy-">Why Modern Web is So Heavy?</h2>
+        <p>
+          Not only me but everyone who surfs through modern websites, especially
+          old peoples must noticed that most websites they browse are heavy
+          nowadays, even though it&#39;s actual purpose is very simple. This
+          issues can be easily/instantly noticed on machine running on older
+          hardware and low ram. In such scenarios, these sites are enough to
+          freeze the browser or computer of user.
+        </p>
+        <p>
+          So many people just end up in a conclusion that, the issue is their
+          browser, processor, ram, or just network issues. But no. No matter
+          which browser they use (chrome, safari, or Firefox), what happening is
+          not an issue occurred on the rendering process but how the websites
+          itself is made.
+        </p>
+        <h3 id="heavy-javascript-usage">Heavy JavaScript Usage</h3>
+        <p>
+          On older days developers used pure HTML for building web pages and CSS
+          for designing. Only used JavaScript when essential like a feature or
+          button needs it. We can say it like 80% of HTML, 10% of CSS, then only
+          a 10% of JavaScript.
+        </p>
+        <p>
+          But nowadays, in most websites JavaScript is heavily used for
+          ad/tracking purposes, fingerprinting, AI/automated process
+          configuration, server side feature implementations, etc. So every time
+          you load a website, even a very simple
+          <strong>recipe website</strong> your browser is loading too much of
+          unnecessary scripts behind the reason. this is the primary reason of
+          heavy websites.
+        </p>
+        <h3 id="large-images">Large Images</h3>
+        <p>
+          Instead of using a optimized, compressed images, many are just using
+          high quality, animated flashy images to design websites. This is not
+          free or non-resource hungry.
+        </p>
+        <p>
+          For loading those flash animated figure, load large images browser
+          have to do too much process behind the back with will lead to a heavy
+          RAM usage and bandwidth consumption.
+        </p>
+        <h3 id="advertisement-tracking-analytics">
+          Advertisement/Tracking/Analytics
+        </h3>
+        <p>
+          Nowadays, even though a website is worked or not, we can say most
+          websites absolutely contain trackers and ads. Every time you are
+          loading websites in chrome, edge, etc. without a content or
+          ad-blocker, you are not loading the only needed resources for website
+          functioning but also may dynamic ad configs and scripts.
+        </p>
+        <p>This also eat up a decent amount of resources from your RAM.</p>
+        <h3 id="too-many-extensions">Too Many Extensions</h3>
+        <p>
+          Do you have 10+ extensions installed on your browser for productivity,
+          functionality, and clean web experience. Then understand that, each of
+          those extensions needs your RAM to run along with you when you are
+          surfing though each website.
+        </p>
+        <p>
+          Some extensions are specifically designed to run on certain websites,
+          like Reddit related extensions only runs on Reddit. But some others
+          like ad/tracker blocker, threat blocking extensions, password
+          managers, etc. are running on every website and looking for threats.
+        </p>
+        <p>
+          The solution is to reduce the number of extensions installed, you
+          don&#39;t need every extensions you have installed.
+        </p>
+        <p>For example,</p>
+        <ul>
+          <li>
+            DuckDuckGo Tracking Protection, Privacy Badger, Decentraleyes,
+            Adblocker, Adblocker for YouTube, etc.
+            <ul>
+              <li>
+                Can be replaced with <strong>uBlock Origin</strong> or
+                <strong>Adguard</strong>.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Hide YouTube Shorts, Hide Membership Videos, Hide Homepage, Hide
+            Distractions for YouTube, etc.
+            <ul>
+              <li>
+                Can be replaced with <strong>Unhook</strong>,
+                <strong>UnTrap for YouTube</strong>, or
+                <strong>YouTube Tweaks</strong>.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <h3 id="ai-slop">AI Slop</h3>
+        <p>
+          Nowadays AI is everywhere and also in the websites you actively using,
+          extensions, operating systems, also in browsers itself.
+        </p>
+        <p>
+          AI consumes a lot of electricity and water for processing, an now it
+          is here for you RAM and resources too.
+        </p>
+        <p>
+          The only solution is avoid AI as much as possible. Try alternatives
+          that made by true human hands and support developers.
+        </p>
+        <h2 id="some-solutions">Some Solutions</h2>
+        <p>
+          The bloated web was never your fault as a normal user. It completely
+          depends up on the developers mentality and end-goal. But as a user,
+          there are many tools you can use to bypass such issues. Some of them
+          are,
+        </p>
+        <h3 id="switch-browser">Switch Browser</h3>
+        <p>
+          Instead of using basic browsers like chrome, chromium, edge, etc.
+          which have exactly built to comply with the bloat web, switch to
+          powerful browsers.
+        </p>
+        <ul>
+          <li>
+            <p>Librewolf</p>
+            <ul>
+              <li>
+                Out of the box configured for privacy and filter unneeded bloat
+                from web. A perfect daily driver for me.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Hardened Firefox</p>
+            <ul>
+              <li>Still not private as Librewolf but good for casual use.</li>
+              <li>
+                You can tweak everything yourself, or use trusted user scripts
+                like Betterfox, phoenix, or Arkenfox.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Mullvad Browser</p>
+            <ul>
+              <li>
+                Users who need more than Librewolf does, extreme fingerprint and
+                bloat prevention.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Ungoogled Chromium</p>
+            <ul>
+              <li>Google stripped out version of chromium.</li>
+              <li>Much more powerful and customizable browser.</li>
+              <li>
+                Can install chrome web store extensions via the help of a
+                extension called chromium-web-store.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Brave-Origin</p>
+            <ul>
+              <li>
+                A debloated version of brave with all protections and features
+                brave have without bloat.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <blockquote>
+          <p>
+            <strong
+              >It&#39;s Brave Origin and not Brave. Brave have AI and Crypto
+              features bundled in.</strong
+            >
+          </p>
+        </blockquote>
+        <h3 id="extensions">Extensions</h3>
+        <ul>
+          <li>
+            <p>NoScript</p>
+            <ul>
+              <li>
+                Gives much more control over scripts you run on a website.
+              </li>
+              <li>
+                You can block all scripts and individually allow each scripts,
+                which will help you to block unnecessary functionalities on a
+                website even before it&#39;s getting loaded.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <p>Auto Tab Discard</p>
+            <ul>
+              <li>
+                Automatically detect that most RAM consuming tab in background
+                and put that to sleep for saving resources and memory.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </main>
+    </section>
+
+    <footer class="footer">
+      <p>A site simply built using HTML & CSS</p>
+      <div class="social-links">
+        <a href="https://github.com/habitant5830"
+          ><img src="../images/social/github.svg" alt="Github"
+        /></a>
+
+        <a href="https://mastodon.social/@cymbal8240"
+          ><img src="../images/social/mastodon.svg" alt="Mastodon"
+        /></a>
+
+        <a href="https://lemmy.ca/u/Crumpled6273"
+          ><img src="../images/social/lemmy.svg" alt="Lemmy"
+        /></a>
+
+        <a href="https://rightbay.se/tapestry7912"
+          ><img src="../images/social/pixelfed.svg" alt="Pixelfed"
+        /></a>
+
+        <a href="https://minddump-5f4.pages.dev/"
+          ><img src="../images/social/blog.svg" alt="Blog"
+        /></a>
+      </div>
+      <div class="footer-links">
+        <a href="../privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -31,10 +31,6 @@ body {
   height: 100%;
 }
 
-.main-sections {
-  display: flex;
-  flex: 1; /*flex container use all remaining space*/
-}
 /*aside and main are flex (main-sections) childrens*/
 
 aside {
@@ -63,22 +59,32 @@ main h1 {
   font-size: 40px;
 }
 
+.main-sections {
+  display: flex;
+  flex: 1; /*flex container use all remaining space*/
+}
+
 blockquote {
   margin: 0;
   font-weight: bold;
   font-style: italic;
 }
 
-nav {
+header {
+  border: thick solid var(--primary-purple);
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  padding: 10px;
+  margin: 10px;
+}
+
+header nav {
   display: flex;
   position: relative;
   font-weight: bold;
   gap: 10%;
   justify-content: center;
   font-size: large;
-  border-bottom: thick double var(--primary-purple);
-  background-color: var(--bg-color);
-  padding: 10px;
 }
 
 nav a {
@@ -112,12 +118,18 @@ a:active {
 /* footer section */
 
 footer {
+  border: thick solid var(--primary-purple);
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  padding: 10px;
+  margin: 10px;
+}
+
+footer.footer {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   text-align: center;
-  border-top: thick double var(--primary-purple);
-  padding: 10px;
 }
 
 .social-links {
@@ -243,7 +255,6 @@ figcaption {
 /* table customization */
 
 table {
-  width: 80%;
   height: auto;
   border: 3px solid var(--primary-purple);
   padding: 5px;

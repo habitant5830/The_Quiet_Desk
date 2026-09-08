@@ -246,10 +246,24 @@ figcaption {
   text-align: center;
 }
 
+/* animation effect */
+@keyframes floating-effect {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .profile-picture {
+  animation: floating-effect 2.5s ease-in-out infinite; /* assigned existing animation to this object */
   width: 200px;
-  height: 200px;
-  margin: 40px;
+  height: auto;
+  margin: 30px;
 }
 
 /* table customization */

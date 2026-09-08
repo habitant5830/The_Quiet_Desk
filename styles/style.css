@@ -192,6 +192,24 @@ figcaption {
   background-color: #ffffff;
 }
 
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+}
+
+.tags li {
+  background-color: #f3e8ff;
+  color: var(--primary-purple);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .profile {
   text-align: center;
 }

@@ -272,8 +272,7 @@ table {
   height: auto;
   border: 3px solid var(--primary-purple);
   padding: 5px;
-  margin: 80px;
-  justify-self: center;
+  margin: 60px auto;
   border-collapse: collapse;
 }
 
@@ -314,8 +313,13 @@ tr:nth-child(even) {
   background-color: #f8f6fc;
 }
 
-td.emoji {
+td.table-icons {
   text-align: center;
+}
+
+td.table-icons img {
+  width: 20px;
+  height: auto;
 }
 
 /* trash bin page */
@@ -415,13 +419,6 @@ main.trash-bin {
     flex-direction: column;
     max-width: 100%;
     height: auto;
-  }
-
-  table,
-  th,
-  tr,
-  td {
-    margin: 20px;
   }
 
   .trash-bin-page {

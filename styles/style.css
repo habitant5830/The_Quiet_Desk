@@ -72,7 +72,8 @@ main.about,
 main.posts,
 main.home,
 main.privacy,
-main.post-overview {
+main.post-overview,
+main.trash-bin {
   padding: 2rem 1rem;
 }
 
@@ -247,7 +248,7 @@ footer.footer {
 }
 
 table {
-  width: 60%;
+  width: 100%;
   height: auto;
   border: 3px solid var(--primary-purple);
   padding: 5px;
@@ -300,10 +301,6 @@ td.table-icons img {
 
 /* trash bin page */
 
-main.trash-bin {
-  margin: 5% 10%;
-}
-
 .trash-button {
   display: flex;
   border: thick solid var(--primary-purple);
@@ -316,15 +313,13 @@ main.trash-bin {
 }
 
 .trash-bin-page {
-  border-left: 5px double var(--primary-purple);
-  border-right: 5px double #5b21b6;
-  margin-left: 100px;
-  margin-right: 100px;
+  border-left: thick solid var(--primary-purple);
+  border-right: thick solid #5b21b6;
+  margin: 5px auto;
 }
 
 .app-list {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 5px auto;
 }
 
 /* posts page */

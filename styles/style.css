@@ -1,10 +1,4 @@
 :root {
-  --bg-color: #f8f6fc;
-  --primary-purple: #7c3aed;
-  --link-hover: #5b21b6;
-}
-
-* {
   font-family:
     system-ui,
     -apple-system,
@@ -17,6 +11,12 @@
     "Open Sans",
     "Helvetica Neue",
     sans-serif;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+
+  /* color variables */
+  --bg-color: #f8f6fc;
+  --primary-purple: #7c3aed;
+  --link-hover: #5b21b6;
 }
 
 /* scrollbar */
@@ -47,16 +47,24 @@ aside {
 
 main {
   flex: 1;
-  margin: 5% 15%; /* Shrinks the side margins from 15% down to 5% */
-  max-width: none;
-  align-self: center;
-  width: 80%; /* Ensures it takes up the available space */
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
 }
 
 main h1 {
   text-align: center;
-  margin-bottom: 10%;
-  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+/* Main class of each pages */
+
+main.about,
+main.posts,
+main.home,
+main.privacy {
+  padding: 2rem 1rem;
 }
 
 .main-sections {
@@ -84,7 +92,6 @@ header nav {
   font-weight: bold;
   gap: 10%;
   justify-content: center;
-  font-size: large;
 }
 
 nav a {
@@ -178,24 +185,8 @@ figure img {
   justify-items: center;
 }
 
-figcaption {
-  font-size: small;
-}
-
 .sidebar-post {
   margin: 5px;
-}
-
-.home {
-  align-self: normal;
-}
-
-.about {
-  align-self: normal;
-}
-
-.privacy {
-  align-self: normal;
 }
 
 .input-box {
@@ -236,7 +227,6 @@ figcaption {
   color: var(--primary-purple);
   padding: 4px 10px;
   border-radius: 20px;
-  font-size: 12px;
   font-weight: 500;
 }
 
@@ -268,11 +258,17 @@ figcaption {
 
 /* table customization */
 
+.table-section {
+  display: flex;
+  flex-direction: column;
+}
+
 table {
+  width: 60%;
   height: auto;
   border: 3px solid var(--primary-purple);
   padding: 5px;
-  margin: 60px auto;
+  margin: 30px auto;
   border-collapse: collapse;
 }
 
@@ -280,7 +276,6 @@ thead th {
   border: 3px solid var(--primary-purple);
   padding: 15px 30px;
   text-align: center;
-  font-size: larger;
   background-color: var(--primary-purple);
   color: white;
 }
@@ -291,8 +286,6 @@ td {
   color: black;
   padding: 15px 20px;
   text-align: left;
-  margin: 80px;
-  justify-self: center;
 }
 
 th {
@@ -331,11 +324,10 @@ main.trash-bin {
 
 .trash-button {
   display: flex;
-  border: 1px solid var(--primary-purple);
+  border: thick solid var(--primary-purple);
   border-radius: 8px;
   max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px auto;
   background-color: var(--bg-color);
   color: black;
   padding: 20px;
@@ -365,14 +357,17 @@ main.trash-bin {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 4%;
+}
+
+.main-page-headings h1 {
+  margin: 2% 2%;
 }
 
 .post-overview {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .post-preview {

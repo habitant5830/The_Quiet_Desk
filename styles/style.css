@@ -73,7 +73,8 @@ main.posts,
 main.home,
 main.privacy,
 main.post-overview,
-main.trash-bin {
+main.trash-bin,
+main.my-setup {
   padding: 2rem 1rem;
 }
 
@@ -341,8 +342,7 @@ td.table-icons img {
 }
 
 .post-overview {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 2rem;
   max-width: 100%;
 }
@@ -362,6 +362,24 @@ td.table-icons img {
 .post-preview:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(124, 58, 237, 0.12);
+}
+
+/* My-setup page */
+.my-setup {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  align-items: start; /* items size to their content, not the row height */
+  gap: 2rem;
+}
+
+.my-setup div {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  text-align: center;
+  border: thick solid var(--primary-purple);
 }
 
 /*Responsive Designing*/

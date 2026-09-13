@@ -307,21 +307,21 @@ td.table-icons img {
   flex-direction: column;
 }
 
-.buttons a {
-  border: thick solid var(--primary-purple);
-  border-radius: 8px;
+.buttons button {
+  border-radius: 12px;
   max-width: fit-content;
   margin: 10px auto;
   background-color: var(--bg-color);
   color: black;
-  padding: 20px;
+  padding: 1rem;
+  font-size: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); /* Subtle depth */
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease; /* Smooth glide effect */
 }
 
-.buttons a:hover {
+.buttons button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(124, 58, 237, 0.12);
 }

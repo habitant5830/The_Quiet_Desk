@@ -94,6 +94,7 @@ header {
   border: thick solid var(--primary-purple);
   border-radius: 12px;
   background-color: var(--bg-color);
+  background-color: var(--bg-color);
   padding: 10px;
   margin: 10px;
 }
@@ -254,38 +255,28 @@ footer.footer {
 table {
   width: 100%;
   height: auto;
-  border: 3px solid var(--primary-purple);
-  padding: 5px;
   margin: 30px auto;
   border-collapse: collapse;
 }
 
+table,
+tr,
+td {
+  border: 4px solid var(--primary-purple);
+  background-color: #ffffff;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+}
+
 thead th {
-  border: 3px solid var(--primary-purple);
   padding: 15px 30px;
   text-align: center;
   background-color: var(--primary-purple);
   color: white;
 }
 
-td {
-  border: 3px solid var(--primary-purple);
-  background-color: var(--bg-color);
-  color: black;
-  padding: 15px 20px;
-  text-align: left;
-}
-
-th {
-  background-color: var(--bg-color);
-  color: black;
-}
-
-tr {
-  background-color: #ffffff;
-  color: black;
-}
-
+td:hover,
 tr:hover {
   background-color: #f3e8ff;
 }

@@ -1,3 +1,5 @@
+@import url(animations.css);
+
 *,
 *::before,
 *::after {
@@ -225,19 +227,6 @@ footer.footer {
   text-align: center;
 }
 
-/* animation effect */
-@keyframes floating-effect {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
 .profile-picture {
   animation: floating-effect 2.5s ease-in-out infinite; /* assigned existing animation to this object */
   width: 200px;
@@ -419,6 +408,51 @@ td.table-icons img {
 .post-overview .post-preview:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(124, 58, 237, 0.12);
+}
+
+/* Falling leaf effect */
+
+div.falling-leaf {
+  position: fixed; /* pins element to browser window, so no actions affect the element like scrolling.*/
+  top: 0; /* position it on top */
+  left: 0; /* position it on left */
+  pointer-events: none; /* no mouse clicks affect the element */
+  z-index: 999; /* put the layer top of other layers */
+  height: 100vh;
+}
+
+div.falling-leaf img {
+  position: absolute; /*allows the img to move freely */
+  width: 20px;
+  height: auto;
+  /* linking the animation to the corresponding class */
+  animation: falling-effect 15s linear infinite;
+}
+
+div.falling-leaf {
+  position: fixed; /* pins element to browser window, so no actions affect the element like scrolling.*/
+  top: 0; /* position it on top */
+  left: 0; /* position it on left */
+  pointer-events: none; /* no mouse clicks affect the element */
+  z-index: 999; /* put the layer top of other layers */
+  height: 100vh;
+}
+
+div.falling-leaf img {
+  position: absolute; /*allows the img to move freely */
+  width: 20px;
+  height: auto;
+  /* linking the animation to the corresponding class */
+  animation: falling-effect 15s linear infinite;
+}
+
+div.falling-leaf img.leaf-1 {
+  left: 5%;
+}
+
+div.falling-leaf img.leaf-2 {
+  left: 15%;
+  animation-delay: -5s;
 }
 
 /*Responsive Designing*/

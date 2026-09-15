@@ -245,6 +245,10 @@ footer.footer {
   margin: 30px;
 }
 
+div.greeting-message {
+  margin: 2rem;
+}
+
 /* table customization */
 
 .table-section {

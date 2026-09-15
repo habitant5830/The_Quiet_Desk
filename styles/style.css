@@ -44,20 +44,6 @@ body {
   height: 100%;
 }
 
-/*aside and main are flex (main-sections) childrens*/
-
-aside {
-  flex: 0 0 15%; /* aside gets a 20% flex-basis and won't grow or shrink */
-  display: flex;
-  flex-direction: column;
-  border: thick solid var(--primary-color); /*created a border around aside*/
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.06);
-  padding: 10px;
-  background-color: var(--bg-color);
-  margin: 10px; /*space between aside container and other items*/
-}
-
 main {
   flex: 1;
   width: 100%;
@@ -95,11 +81,13 @@ blockquote {
 }
 
 header {
-  border: thick solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   border-radius: 12px;
   background-color: var(--bg-color);
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 header nav {
@@ -139,21 +127,20 @@ a:active {
 /* footer section */
 
 footer {
-  border: thick solid var(--primary-color);
-  border-radius: 12px;
-  background-color: var(--bg-color);
-  padding: 10px;
-  margin: 10px;
-}
-
-footer.footer {
   display: flex;
   flex-direction: column;
   max-width: 100%;
   text-align: center;
+  border: 3px solid var(--primary-color);
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  padding: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.social-links {
+footer.social-links {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,44 +148,39 @@ footer.footer {
   margin: 10px;
 }
 
-.social-links img {
+div.social-links img {
   height: 24px;
   width: auto;
-  margin: 0;
+  margin-right: 10px;
 }
 
-.footer-links {
+footer.footer-links {
   display: flex;
   gap: 30px;
-  justify-content: center;
+}
+
+/*aside and main are flex (main-sections) childrens*/
+
+aside {
+  flex: 0 0 15%; /* aside gets a 20% flex-basis and won't grow or shrink */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 
 .sidebar-post {
   margin: 5px;
 }
 
+.recent-posts,
+.tags,
 .input-box {
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ffffff;
-}
-
-.recent-posts {
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ffffff;
-}
-
-.tags {
-  border: 1px solid var(--primary-color);
-  border-radius: 8px;
-  margin: 10px;
-  padding: 10px;
-  background-color: #ffffff;
+  border: 3px solid var(--primary-color);
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: var(--bg-color);
+  width: 300px;
 }
 
 .tags ul {
@@ -208,6 +190,11 @@ footer.footer {
   list-style: none;
   padding: 0;
   margin: 5px 0 0 0;
+}
+
+.tags h5,
+.recent-posts h5 {
+  margin: 0;
 }
 
 .tags li {
@@ -246,16 +233,16 @@ table {
   width: 100%;
   height: auto;
   margin: 30px auto;
+  border-radius: 12px;
   border-collapse: collapse;
 }
 
 table,
 tr,
 td {
-  border: 4px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   background-color: #ffffff;
-  color: black;
-  text-align: center;
+  text-align: left;
   padding: 1rem;
 }
 
@@ -266,13 +253,8 @@ thead th {
   color: white;
 }
 
-td:hover,
-tr:hover {
-  background-color: var(--highlight);
-}
-
 tr:nth-child(even) {
-  background-color: #f8f6fc;
+  background-color: #ecfdf5;
 }
 
 td.table-icons {
@@ -281,7 +263,8 @@ td.table-icons {
 
 td.table-icons img {
   width: 20px;
-  height: auto;
+  height: 20px;
+  display: inline-block;
 }
 
 .buttons {
@@ -290,14 +273,12 @@ td.table-icons img {
 }
 
 .buttons button {
-  border: thick solid var(--primary-color);
+  border: 3px solid var(--primary-color);
   border-radius: 12px;
-  max-width: fit-content;
+  width: 60%;
   margin: 10px auto;
   background-color: var(--bg-color);
-  color: black;
-  padding: 1rem;
-  font-size: 1rem;
+  padding: 10px;
   box-shadow: 0 2px 10px var(--rgba-value); /* Subtle depth */
   transition:
     transform 0.2s ease,

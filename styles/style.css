@@ -92,16 +92,26 @@ header {
 
 header nav {
   overflow: hidden;
-  display: inline;
-  display: flex;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   font-weight: bold;
-  gap: 10%;
+}
+.nav-links {
+  display: flex;
+  gap: 30%;
   justify-content: center;
 }
 
 nav a {
   max-width: fit-content;
+}
+
+/* Theme toggle */
+img#theme-toggle {
+  justify-self: end;
+  width: 30px;
+  height: auto;
 }
 
 p.article {

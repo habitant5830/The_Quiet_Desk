@@ -15,7 +15,9 @@
   <body>
     <header>
       <nav>
+        <!-- Essential empty div to adjust nav links -->
         <div></div>
+
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="posts.html">Posts</a>
@@ -23,7 +25,9 @@
         </div>
 
         <!--Theme toggle button-->
-        <img id="theme-toggle" src="images/profile/night.png" />
+        <button id="toggle" onclick="change()">
+          <img id="toggleIcon" src="images/profile/night.png" />
+        </button>
       </nav>
     </header>
 
@@ -217,5 +221,6 @@
     </footer>
     <!-- Scripts -->
     <script src="js/greetings.js"></script>
+    <script src="js/dark-mode.js"></script>
   </body>
 </html>

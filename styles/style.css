@@ -32,6 +32,8 @@
   --highlight: #ecfdf5;
 }
 
+/* Dark mode setup */
+
 .dark-mode {
   --bg-color: #0f1715; /* Deep dark background with a subtle green tint */
   --primary-color: #22c55e; /* Slightly brighter green so it pops against dark backgrounds */
@@ -42,10 +44,14 @@
   --color: white;
 }
 
+body.dark-mode footer img {
+  filter: invert(1);
+}
+
 /* scrollbar */
 html {
-  scrollbar-width: thin;
-  scrollbar-color: gray #f0f0f0;
+  scrollbar-width: auto;
+  scrollbar-color: var(--primary-color) var(--bg-color);
 }
 
 body {

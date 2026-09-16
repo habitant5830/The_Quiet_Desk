@@ -413,7 +413,7 @@ div.falling-leaf img {
   width: 20px;
   height: auto;
   /* linking the animation to the corresponding class */
-  animation: falling-effect 15s linear infinite;
+  animation: falling-effect 20s linear infinite;
 }
 
 div.falling-leaf img.leaf-2 {

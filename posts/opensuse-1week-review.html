@@ -1,0 +1,387 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>The Quiet Desk</title>
+    <meta
+      name="description"
+      description="A personal corner to dump my thoughts and opinions on tech, privacy,
+          Linux, and whatever else I’m into."
+    />
+    <meta name="author" content="MindDump009" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Essential empty div to adjust nav links -->
+        <div></div>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../posts.html">Posts</a>
+          <a href="../about.html">About</a>
+        </div>
+
+        <!--Theme toggle button-->
+        <button id="toggle" onclick="change2()">
+          <img id="toggleIcon" src="../images/profile/night.png" />
+        </button>
+      </nav>
+    </header>
+
+    <section class="main-sections">
+      <aside>
+        <input class="input-box" type="text" placeholder="Search" />
+        <div class="recent-posts">
+          <h5>Recent Posts</h5>
+          <ul>
+            <li>
+              <article class="sidebar-post">
+                <h3>
+                  <a href="../posts/opensuse-1week-review.html">
+                    My Experience Using OpenSUSE
+                  </a>
+                </h3>
+                <p>
+                  A review on OpenSUSE after 1 week of use. Everything covered
+                  about the advantages, disadvantages and what can be improved
+                  as a enterprise linux distribution.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="sidebar-post">
+                <h3>
+                  <a href="../posts/bloated-web.html"
+                    >The Era of Heavy Bloated Web</a
+                  >
+                </h3>
+                <p>
+                  Explaining why modern websites are more bloated and resource
+                  hungry.
+                </p>
+              </article>
+            </li>
+
+            <li>
+              <article class="sidebar-post">
+                <h3>
+                  <a href="../posts/fingerprinting.html"
+                    >Fingerprinting: The Hidden Trap on the Modern Web.</a
+                  >
+                </h3>
+                <p>
+                  Explained various fingerprinting methods used in the modern
+                  web and what to do about it.
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+        <div class="tags">
+          <h5>Tags</h5>
+          <ul>
+            <li>Linux</li>
+            <li>Privacy</li>
+            <li>Firefox</li>
+            <li>Internet</li>
+            <li>Tracking</li>
+          </ul>
+        </div>
+      </aside>
+      <div class="falling-leaf left-side">
+        <img class="leaf-1" src="../images/animation/leaf-1.png" alt="leaf" />
+        <img class="leaf-2" src="../images/animation/leaf-2.png" alt="leaf" />
+      </div>
+
+      <div class="falling-leaf right-side">
+        <img class="leaf-1" src="../images/animation/leaf-1.png" alt="leaf" />
+        <img class="leaf-2" src="../images/animation/leaf-2.png" alt="leaf" />
+      </div>
+
+      <main class="posts">
+        <h1>My Experience Using OpenSUSE</h1>
+        <p>
+          After spending one week using openSUSE Tumbleweed, I am writing a
+          review of my experience with it. What issues I faced, how well it
+          served me compared to other distributions, and whether I would
+          recommend this to new users, daily drivers, gamers, or programmers.
+          The post will be updated as I find useful things or run into
+          bugs/crashes.
+        </p>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <th>Sl. No.</th>
+              <th>Specs</th>
+              <th>Value</th>
+              <th>Notes</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Variant</td>
+                <td>Tumbleweed</td>
+                <td>Rolling release with OpenQA checking</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Desktop Environment</td>
+                <td>KDE Plasma</td>
+                <td>
+                  OpenSUSE has a well maintained release of KDE with latest
+                  features and much more stable experience than competing
+                  distributions.
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Release Model</td>
+                <td>Rolling</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Processor</td>
+                <td>Intel i5</td>
+                <td>Using an Intel laptop with 512GB SSD and 16GB RAM.</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Package Manager</td>
+                <td>Zypper</td>
+                <td>
+                  A decent package manager with a command style similar to apt
+                  and dnf.
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Flatpak Packages</td>
+                <td>Removed</td>
+                <td>
+                  Out of the box flatpak is included with OpenSUSE tumbleweed
+                  installation. But I'm not a fan of flatpak, so I intentionally
+                  uninstalled it and limited myself to rpm packages, packman and
+                  official repository.
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Third-Party Repositories</td>
+                <td>Packman</td>
+                <td>
+                  Installed for certain proprietary codecs and drivers like
+                  intel-media-driver.
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>File System</td>
+                <td>Btrfs without Snapshots</td>
+                <td>
+                  <p>
+                    OpenSUSE tumbleweed is a rolling release distribution but
+                    still I opted out of Snapshots as this is too storage
+                    consuming and complex for me. I believe the OpenQA testing
+                    is more than enough to prove its stability.
+                  </p>
+
+                  <p>
+                    The general advice from community is not to rely on old
+                    snapshots since updates ship so frequently.
+                  </p>
+                  <p>
+                    BTW, I have a Live USB as a backup if something goes wrong
+                    like a kernel boot failure or system corruption.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Update Command</td>
+                <td>zypper dup</td>
+                <td>
+                  This is the main difference from Leap's
+                  <strong>sudo zypper update</strong>.
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>YaST</td>
+                <td>Removed</td>
+                <td>
+                  By default YaST was included but since it is discontinued and
+                  replaced, I completely removed it and locked from
+                  auto-reinstallation during distribution updates.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>The installation Process</h2>
+
+        <p>
+          I used a 4GB USB Drive to install OpenSUSE. As the Live ISO needs more
+          space than what I have, I chose <strong>Netinstall</strong>. With
+          <strong>Rufus</strong> I made the USB an installation medium and
+          started the installation process.
+        </p>
+        <p>
+          The installation screen was much different from the installation
+          screen of OpenSUSE Leap. For a beginner, it must be a headache to
+          choose right options and customize the installation how they want, but
+          as I already have experience installing ISO, I managed to choose
+          everything as I wanted. As given in the table above, I chose those
+          options and the installation process has been started
+        </p>
+        <p>
+          The Netinstall method was much slower than I expected, as must be a
+          mirror or server side issue as I have a fast internet already. I also
+          saw many in online communities complaining about the installation
+          process. Downloading resources over internet connection is very
+          slower. No matter how fast the connection is or using a VPN. After
+          around 1:30 hrs the installation process completed.
+        </p>
+        <h2>First Boot</h2>
+        <p>
+          After the installation process completed, system rebooted directly
+          into <strong>TTY mode</strong>. Maybe a small bug. But a system reset
+          fixed it and allowed me to boot normally.
+        </p>
+        <h2>First Look</h2>
+        <p>
+          After logging in the experience was much smoother and clean. Just like
+          Leap no unnecessary things. Just a clean KDE Plasma installation. But
+          I noticed something difference compared to Leap installation here.
+        </p>
+        <ul>
+          <li>Flatpak installed by default.</li>
+          <li>Have YaST even though it is officially discontinued.</li>
+          <li>
+            In tumbleweed, to update the system
+            <strong>sudo zypper dup</strong> is used instead of sudo zypper
+            update.
+          </li>
+          <li>
+            The entire distribution updated as a group which means, after an
+            update some apps can be removed, added or just re-installed.
+          </li>
+          <li>Not only the installation process but also zypper is slower.</li>
+          <li>Many KDE apps have been pre-installed.</li>
+        </ul>
+        <h2>Debloating Process</h2>
+        <p>
+          Even though the first look is so clean, there are still many things I
+          don't want. So, I started to clean up those. But I don't know the
+          commands like used in zypper like apt or dnf as I just tested Leap in
+          the past. So learned those commands used to install, update, clean, or
+          purge data. It was not that hard to learn as just some keywords
+          differed compared to apt, dnf, pacman.
+        </p>
+        <p>Then I removed,</p>
+        <ul>
+          <li>
+            Entire Flatpak and limited myself to rpm packages and official
+            repository.
+          </li>
+          <li>Removed the pre-installed KDE applications.</li>
+          <li>Removed YaST and locked it from auto re-install.</li>
+        </ul>
+        <h2>Third-Party Repositories</h2>
+        <p>
+          Then I installed a third-party repository called
+          <strong>Packman</strong> for proprietary codes and media drivers. Just
+          like we install Backports on Debian and RPM Fusion on Fedora.
+        </p>
+        <h2>Zypper</h2>
+        <p>
+          <strong>Zypper</strong> is the default package manager of OpenSUSE
+          distribution. It is advanced and have many more features to compete
+          and stay up-to-date against other package managers like apt, dnf and
+          pacman. But zypper is much slower than other package managers I used.
+          Zypper performs badly on both the downloading process and other tasks
+          like removing software, running python script, etc.
+        </p>
+        <p>
+          I wonder why such a widely used linux distribution has done nothing
+          about the slowness of their own package manager for years.
+        </p>
+        <h2>Conclusion</h2>
+
+        <p>
+          OpenSUSE is for someone who wants rolling release but never wants to
+          break their system at any point. With much simpler configurations and
+          out of the box decent tweaks I recommend this distribution for
+          everyone including everyday users, developers, gamers, etc.
+        </p>
+
+        <p>
+          While many other distributions struggling to maintain various desktop
+          environments like KDE, XFCE and GNOME, OpenSUSE gives a much more
+          stable and up-to-date experience with all three out of the box
+        </p>
+
+        <p>
+          It's out of the box setup for snapshots as a rolling release, flatpak
+          integration and the replacement of YaST with tools like agama
+          (web-installer), cockpit (web-based system management tool) and myrlyn
+          (package management) gives a comfortable experience for users without
+          worrying about setting up the system. One thing here to say that
+          <strong>cockpit</strong> is good but it never managed to completely
+          replace the advanced functionalities YaST offered. I'm still
+          wondering, why they dropped YaST for these less efficient and more
+          complex tools.
+        </p>
+
+        <blockquote>
+          The stability comes from OpenQA, an automated testing framework that
+          other rolling distributions like Arch, CachyOS, EndeavourOS, etc.
+          lack.
+        </blockquote>
+
+        <p>
+          You must install OpenSUSE once in your life and
+          <strong>there ends your distribution-hopping</strong>.
+        </p>
+        <hr />
+        <p>Thank you for reading.</p>
+      </main>
+    </section>
+
+    <footer>
+      <p>A site simply built using HTML, CSS & JavaScript</p>
+      <div class="social-links">
+        <a href="https://github.com/habitant5830"
+          ><img src="../images/social/github.svg" alt="Github"
+        /></a>
+
+        <a href="https://mastodon.social/@cymbal8240"
+          ><img src="../images/social/mastodon.svg" alt="Mastodon"
+        /></a>
+
+        <a href="https://lemmy.ca/u/Crumpled6273"
+          ><img src="../images/social/lemmy.svg" alt="Lemmy"
+        /></a>
+
+        <a href="https://rightbay.se/tapestry7912"
+          ><img src="../images/social/pixelfed.svg" alt="Pixelfed"
+        /></a>
+
+        <a href="https://minddump-5f4.pages.dev/"
+          ><img src="../images/social/blog.svg" alt="Blog"
+        /></a>
+      </div>
+      <div class="footer-links">
+        <a href="../privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="../js/dark-mode.js"></script>
+  </body>
+</html>

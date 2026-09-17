@@ -28,6 +28,10 @@
   --link-active: #064e3b;
   --rgba-value: rgba(5, 150, 105);
   --highlight: #ecfdf5;
+
+  /* other variables */
+  --border-radius: 12px;
+  --border: 3px solid var(--primary-color);
 }
 
 /* Dark mode setup */
@@ -102,8 +106,8 @@ blockquote {
 }
 
 header {
-  border: 3px solid var(--primary-color);
-  border-radius: 12px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   background-color: var(--bg-color);
   padding: 5px;
   margin-top: 5px;
@@ -165,8 +169,8 @@ footer {
   flex-direction: column;
   max-width: 100%;
   text-align: center;
-  border: 3px solid var(--primary-color);
-  border-radius: 12px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   background-color: var(--bg-color);
   padding: 5px;
   margin-bottom: 5px;
@@ -218,8 +222,8 @@ aside {
 .recent-posts,
 .tags,
 .input-box {
-  border: 3px solid var(--primary-color);
-  border-radius: 12px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   margin-top: 10px;
   padding: 15px;
   background-color: var(--bg-color);
@@ -239,7 +243,7 @@ aside {
   background-color: var(--highlight);
   color: var(--primary-color);
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   font-weight: 500;
 }
 
@@ -272,7 +276,7 @@ table {
   font-size: large;
   height: auto;
   margin: 30px auto;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   border-collapse: collapse;
 }
 
@@ -315,9 +319,9 @@ td.table-icons img {
 
 .index-buttons button {
   padding: 1rem;
-  border: 3px solid var(--primary-color);
+  border: var(--border);
   font-size: large;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   box-shadow: 2px 4px 8px var(--rgba-value);
   transition:
     transform 0.2s ease,
@@ -361,8 +365,8 @@ td.table-icons img {
   min-width: 0;
   overflow: hidden;
   background-color: var(--bg-color);
-  border-radius: 12px;
-  border: thick solid var(--primary-color);
+  border-radius: var(--border-radius);
+  border: var(--border);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04); /* Subtle depth */
   transition:
     transform 0.2s ease,
@@ -381,7 +385,7 @@ td.table-icons img {
 
 .my-setup div hr {
   width: 100%;
-  border: 2px solid var(--primary-color);
+  border: var(--border);
 }
 
 .my-setup div ul {
@@ -400,11 +404,11 @@ td.table-icons img {
 }
 
 .post-overview .post-preview {
-  border: 3px solid var(--primary-color);
+  border: var(--border);
   background-color: var(--bg-color);
   padding: 1rem;
   text-align: center;
-  border-radius: 12px;
+  border-radius: var(--border-radius);
   box-shadow: 0 2px 10px var(--rgba-value); /* Subtle depth */
   transition:
     transform 0.2s ease,

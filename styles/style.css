@@ -18,16 +18,16 @@
     "Helvetica Neue",
     sans-serif;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
-
   line-height: 1.6;
 
   /* color variables */
-  --bg-color: #f6fbf8;
-  --primary-color: #16a34a;
-  --link-hover: #047857;
-  --link-active: #064e3b;
-  --rgba-value: rgba(5, 150, 105);
-  --highlight: #ecfdf5;
+  --bg-color: #fdfbff;
+  --primary-color: #6b5b8a;
+  --link-hover: #8b7aae;
+  --link-active: #5a4a78;
+  --rgba-value: rgba(107, 91, 138, 0.08);
+  --highlight: #f3eefa;
+  --success: #22c55e;
 
   /* other variables */
   --border-radius: 12px;
@@ -38,13 +38,14 @@
 /* Dark mode setup */
 
 .dark-mode {
-  --bg-color: #0f1715; /* Deep dark background with a subtle green tint */
-  --primary-color: #22c55e; /* Slightly brighter green so it pops against dark backgrounds */
-  --link-hover: #34d399; /* Softer green hue for hover readability */
-  --link-active: #6ee7b7; /* Bright green-mint accent for active links */
-  --rgba-value: rgba(34, 197, 94);
-  --highlight: #132e25; /* Low-opacity dark green highlight container */
-  --color: white;
+  --bg-color: #1a1622;
+  --primary-color: #c8bfd8;
+  --link-hover: #a89bc0;
+  --link-active: #e0d8ec;
+  --rgba-value: rgba(200, 191, 216, 0.08);
+  --highlight: #251f30;
+  --color: #c8bfd8;
+  --success: #4ade80;
 }
 
 body.dark-mode footer img {
@@ -67,7 +68,6 @@ body {
   height: 100%;
   background-color: var(--bg-color);
   color: var(--color);
-  text-align: justify;
 }
 
 main {
@@ -209,6 +209,7 @@ aside {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  text-align: left;
 }
 
 .sidebar-post {

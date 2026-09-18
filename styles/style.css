@@ -402,8 +402,7 @@ div.falling-leaf img.falling-icon-2 {
   }
 
   aside {
-    flex: none;
-    width: 100%;
+    display: none;
   }
 
   main {

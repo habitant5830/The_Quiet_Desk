@@ -93,16 +93,8 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* Main class of each pages */
-
-main.about,
-main.posts,
-main.home,
-main.privacy,
-main.post-overview,
-main.trash-bin,
-main.my-setup {
-  padding: 2rem 1rem;
+main.posts {
+  max-width: 1200px;
 }
 
 .main-sections {
@@ -239,7 +231,6 @@ aside {
   padding: 1rem;
   background-color: var(--bg-color);
   width: 100%;
-  max-width: 300px;
 }
 
 .tags ul {
@@ -406,8 +397,13 @@ div.falling-leaf img.falling-icon-2 {
 /*Responsive Designing*/
 
 @media (max-width: 600px) {
+  .main-sections {
+    flex-direction: column;
+  }
+
   aside {
-    display: none;
+    flex: none;
+    width: 100%;
   }
 
   main {

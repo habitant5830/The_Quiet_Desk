@@ -51,11 +51,25 @@
   --on-primary: #1a1622;
 }
 
+/* dark mode invertions */
+
+body.dark-mode .profile-picture {
+  filter: invert(1);
+}
+
 body.dark-mode footer img {
   filter: invert(1);
 }
 
-body.dark-mode button img {
+body.dark-mode footer img {
+  filter: invert(1);
+}
+
+body.dark-mode footer img {
+  filter: invert(1);
+}
+
+body.dark-mode #toggle {
   filter: invert(1);
 }
 

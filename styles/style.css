@@ -23,12 +23,11 @@
 
   /* color variables */
   --bg-color: #fdfbff;
-  --primary-color: #6b5b8a;
-  --link-hover: #8b7aae;
-  --link-active: #5a4a78;
+  --primary-color: #4a4160;
+  --link-hover: #7d6c95;
+  --link-active: #3e3450;
   --rgba-value: rgba(107, 91, 138, 0.08);
   --highlight: #f3eefa;
-  --success: #22c55e;
   --on-primary: #fff;
 
   /* other variables */
@@ -40,15 +39,13 @@
 /* Dark mode setup */
 
 .dark-mode {
-  --bg-color: #1a1622;
-  --primary-color: #c8bfd8;
-  --link-hover: #a89bc0;
-  --link-active: #e0d8ec;
-  --rgba-value: rgba(200, 191, 216, 0.08);
-  --highlight: #251f30;
-  --color: #c8bfd8;
-  --success: #4ade80;
-  --on-primary: #1a1622;
+  --bg-color: #110e18; /* Slightly darker base */
+  --primary-color: #8a78a0; /* Less bright primary */
+  --link-hover: #b5a8c8;
+  --link-active: #d1c6e1;
+  --rgba-value: rgba(138, 120, 160, 0.08);
+  --highlight: #282435;
+  --on-primary: #110e18;
 }
 
 /* dark mode invertions */
@@ -58,14 +55,6 @@ body.dark-mode .profile-picture {
 }
 
 body.dark-mode footer img {
-  filter: invert(1);
-}
-
-body.dark-mode .falling-icon-1 {
-  filter: invert(1);
-}
-
-body.dark-mode .falling-icon-2 {
   filter: invert(1);
 }
 
@@ -85,6 +74,8 @@ body {
   height: 100%;
   background-color: var(--bg-color);
   color: var(--color);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  line-height: 1.75; /* Slightly increase from 1.6 */
 }
 
 main {
@@ -99,7 +90,7 @@ h1,
 h2,
 h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h1 {
@@ -271,7 +262,6 @@ aside {
 }
 
 .profile-picture {
-  animation: floating-effect 2.5s ease-in-out infinite;
   width: 200px;
   height: auto;
   margin: 2rem auto;
@@ -338,74 +328,12 @@ td.table-icons img {
   text-align: center;
   border-radius: var(--border-radius);
   box-shadow: 0 2px 10px var(--rgba-value); /* Subtle depth */
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease; /* Smooth glide effect */
+  transition: box-shadow 0.3s ease; /* Smooth glide effect */
 }
 
 .post-overview .post-preview:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px var(--rgba-value);
-}
-
-/* Falling leaf effect */
-/* left side */
-
-div.falling-leaf {
-  position: fixed; /* pins element to browser window, so no actions affect the element like scrolling.*/
-  top: 0; /* position it on top */
-  left: 0; /* position it on left */
-  pointer-events: none; /* no mouse clicks affect the element */
-  z-index: 999; /* put the layer top of other layers */
-  height: 100vh;
-  width: 15vw; /* make leafs visible right side */
-}
-
-div.falling-leaf.right-side {
-  left: auto;
-  right: 0;
-}
-
-div.falling-leaf img {
-  position: absolute; /*allows the img to move freely */
-  left: 10%; /* gap between left margin and leafs */
-  width: 20px;
-  height: auto;
-  /* linking the animation to the corresponding class */
-  animation: falling-effect 20s linear infinite;
-}
-
-div.falling-leaf img.falling-icon-2 {
-  left: 15%;
-  animation-delay: -5s;
-}
-
-/* profile picture animation effect */
-
-@keyframes floating-effect {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-/* falling leaf effect */
-
-@keyframes falling-effect {
-  0% {
-    transform: translate(0, -10vh) rotate(0deg);
-  }
-  50% {
-    transform: translate(25px, 50vh) rotate(45deg);
-  }
-  100% {
-    transform: translate(-10px, 110vh) rotate(90deg);
-  }
+  transform: none;
+  box-shadow: 0 5px 15px var(--rgba-value);
 }
 
 /*Responsive Designing*/

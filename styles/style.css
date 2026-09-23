@@ -22,6 +22,7 @@
   line-height: 1.6;
 
   /* color variables */
+  --color: #3a3545;
   --bg-color: #fdfbff;
   --primary-color: #4a4160;
   --link-hover: #7d6c95;
@@ -43,13 +44,16 @@
 /* Dark mode setup */
 
 .dark-mode {
-  --bg-color: #110e18; /* Slightly darker base */
-  --primary-color: #8a78a0; /* Less bright primary */
-  --link-hover: #b5a8c8;
-  --link-active: #d1c6e1;
-  --rgba-value: rgba(138, 120, 160, 0.08);
-  --highlight: #282435;
-  --on-primary: #110e18;
+  --color: #e8e4f0;
+  --bg-color: #13111a;
+  --primary-color: #c4b8d4;
+  --link-hover: #d5cbe2;
+  --link-active: #e2daf0;
+  --rgba-value: rgba(180, 160, 210, 0.08);
+  --highlight: #1e1a2a;
+  --on-primary: #1a1525;
+  --table-heading: #7a7585;
+  --table-sub-heading: #9a95a5;
 }
 
 /* dark mode invertions */

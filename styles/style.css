@@ -29,6 +29,10 @@
   --rgba-value: rgba(107, 91, 138, 0.08);
   --highlight: #f3eefa;
   --on-primary: #fff;
+  --table-heading: #a9a9a9;
+  --table-sub-heading: #c0c0c0;
+  --table-heading-font-size: 1.5rem;
+  --table-sub-heading-font-size: 0.95rem;
 
   /* other variables */
   --border-radius: 12px;
@@ -233,9 +237,17 @@ td {
 th {
   padding: 1rem 2rem;
   text-align: center;
-  background-color: var(--primary-color);
+  background-color: var(--table-heading);
   color: var(--on-primary);
-  font-size: x-large;
+  font-size: var(--table-heading-font-size);
+}
+
+.th-sections {
+  padding: 1rem 2rem;
+  text-align: center;
+  background-color: var(--table-sub-heading);
+  color: var(--on-primary);
+  font-size: var(--table-sub-heading-font-size);
 }
 
 td.table-icons {

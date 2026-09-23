@@ -81,7 +81,7 @@ body {
 main {
   flex: 1;
   width: 100%;
-  max-width: 40rem;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -191,57 +191,6 @@ footer.footer-links {
   gap: 2rem;
 }
 
-/*aside and main are flex (main-sections) childrens*/
-
-aside {
-  flex: 0 0 20%; /* aside gets a 20% flex-basis and won't grow or shrink */
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  text-align: left;
-}
-
-.sidebar-post {
-  margin: 0.5rem;
-}
-
-.sidebar-post-title {
-  font-weight: bold;
-}
-
-.sidebar-title {
-  margin: 0;
-  font-weight: bold;
-}
-
-.recent-posts,
-.tags,
-.input-box {
-  border: var(--border);
-  border-radius: var(--border-radius);
-  margin-top: 1rem;
-  padding: 1rem;
-  background-color: var(--bg-color);
-  width: 100%;
-}
-
-.tags ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0 0 0;
-}
-
-.tags li {
-  background-color: var(--highlight);
-  color: var(--primary-color);
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--border-radius);
-  font-weight: 500;
-}
-
 /* profile */
 
 .profile {
@@ -286,6 +235,7 @@ th {
   text-align: center;
   background-color: var(--primary-color);
   color: var(--on-primary);
+  font-size: x-large;
 }
 
 td.table-icons {
@@ -328,10 +278,6 @@ td.table-icons img {
 @media (max-width: 600px) {
   .main-sections {
     flex-direction: column;
-  }
-
-  aside {
-    display: none;
   }
 
   main {

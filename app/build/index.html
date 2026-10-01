@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>The Quiet Desk</title>
+    <meta
+      name="description"
+      content="A personal corner to dump my thoughts and opinions on tech, privacy,
+          Linux, and whatever else I’m into."
+    />
+    <meta name="author" content="MindDump009" />
+    <link
+      rel="stylesheet"
+      href="/static/styles/style.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/static/images/favicon.png"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Essential empty div to adjust nav links -->
+        <div></div>
+
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/posts.html">Posts</a>
+          <a href="/about.html">About</a>
+        </div>
+
+        <!--Theme toggle button-->
+        <button id="toggle" onclick="change()">
+          <img
+            id="toggleIcon"
+            src="/static/images/profile/light.png"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <section class="main-sections">
+      <main class="home">
+        <div class="profile">
+          <img
+            class="profile-picture"
+            src="/static/images/profile/profile.png"
+            alt="profile-picture"
+          />
+
+          <h1>Welcome to The Quiet Desk</h1>
+
+          <div class="greeting-message">
+            <h2 id="greetings">Hi there!</h2>
+          </div>
+
+          <p>
+            A personal corner to dump my thoughts and opinions on tech, privacy,
+            Linux, and whatever else I’m into.
+          </p>
+        </div>
+
+        <!-- Table section -->
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">What's Special About The Quiet Space</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Open-Source</td>
+                <td>Look close. Every line is visible.</td>
+              </tr>
+              <tr>
+                <td>Privacy-Respecting</td>
+                <td>Minimal footprint. No secrets required.</td>
+              </tr>
+              <tr>
+                <td>Ad-Free</td>
+                <td>Uninterrupted thought.</td>
+              </tr>
+              <tr>
+                <td>Subscription-Free</td>
+                <td>No rent required.</td>
+              </tr>
+              <tr>
+                <td>No Third-Party Analytics</td>
+                <td>No ghost in the machine watching the flow.</td>
+              </tr>
+              <tr>
+                <td>No Promotions</td>
+                <td>No manufactured desire.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <p>A site simply built using HTML, CSS & JavaScript</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="/static/js/greetings.js"></script>
+    <script src="/static/js/dark-mode.js"></script>
+  </body>
+</html>

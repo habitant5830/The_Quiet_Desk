@@ -9,8 +9,15 @@
           Linux, and whatever else I’m into."
     />
     <meta name="author" content="MindDump009" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="icon" type="image/png" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/favicon.png') }}"
+    />
   </head>
   <body>
     <header>
@@ -19,14 +26,14 @@
         <div></div>
 
         <div class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="../posts.html">Posts</a>
-          <a href="../about.html">About</a>
+          <a href="{{url_for('index')}}">Home</a>
+          <a href="{{url_for('posts')}}">Posts</a>
+          <a href="{{url_for('about')}}">About</a>
         </div>
 
         <!--Theme toggle button-->
         <button id="toggle" onclick="change2()">
-          <img id="toggleIcon" src="../images/profile/light.png" />
+          <img id="toggleIcon" src="{{url_for('static', filename='images/profile/light.png')}}" />
         </button>
       </nav>
     </header>
@@ -678,10 +685,11 @@
     <footer>
       <p>A site simply built using HTML, CSS & JavaScript</p>
       <div class="footer-links">
-        <a href="../privacy.html">Privacy Policy</a>
+        <a href="{{url_for('privacy')}}">Privacy Policy</a>
       </div>
     </footer>
     <!-- Scripts -->
-    <script src="../js/dark-mode.js"></script>
+    <script src="{{url_for('static', filename='js/dark-mode.js')}}"></script>
+  </body>
   </body>
 </html>

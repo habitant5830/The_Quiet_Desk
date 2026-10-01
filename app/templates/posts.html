@@ -9,8 +9,15 @@
           Linux, and whatever else I’m into."
     />
     <meta name="author" content="MindDump009" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/favicon.png') }}"
+    />
   </head>
   <body>
     <header>
@@ -19,14 +26,17 @@
         <div></div>
 
         <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="posts.html">Posts</a>
-          <a href="about.html">About</a>
+          <a href="{{url_for('index')}}">Home</a>
+          <a href="{{url_for('posts')}}">Posts</a>
+          <a href="{{url_for('about')}}">About</a>
         </div>
 
         <!--Theme toggle button-->
         <button id="toggle" onclick="change()">
-          <img id="toggleIcon" src="images/profile/light.png" />
+          <img
+            id="toggleIcon"
+            src="{{url_for('static', filename='images/profile/light.png')}}"
+          />
         </button>
       </nav>
     </header>
@@ -39,7 +49,7 @@
       <main class="post-overview">
         <article class="post-preview">
           <h2>
-            <a href="posts/why_use_a_vpn.html"
+            <a href="{{ url_for('individual_posts', name='why_use_a_vpn') }}"
               >Why You Should Always Use a VPN</a
             >
           </h2>
@@ -52,20 +62,23 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/opensuse-1week-review.html"
+            <a
+              href="{{ url_for('individual_posts', name='opensuse-1week-review') }}"
               >My Experience Using OpenSUSE</a
             >
           </h2>
           <p>
             A review on OpenSUSE after 1 week of use. Everything covered about
-            the advantages, disadvantages and what can be improved as a
+            the advantages, disadvantages and what can be improved as an
             enterprise linux distribution.
           </p>
         </article>
 
         <article class="post-preview">
           <h2>
-            <a href="posts/bloated-web.html">The Era of Heavy Bloated Web</a>
+            <a href="{{ url_for('individual_posts', name='bloated-web') }}"
+              >The Era of Heavy Bloated Web</a
+            >
           </h2>
           <p>
             Explaining why modern websites are more bloated and resource hungry.
@@ -74,7 +87,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/domain-name-system.html"
+            <a
+              href="{{ url_for('individual_posts', name='domain-name-system') }}"
               >DNS: The Telephone Directory of the Internet</a
             >
           </h2>
@@ -86,7 +100,7 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/encryption.html"
+            <a href="{{ url_for('individual_posts', name='encryption') }}"
               >How Encryption Powers the Internet.</a
             >
           </h2>
@@ -97,7 +111,7 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/fingerprinting.html"
+            <a href="{{ url_for('individual_posts', name='fingerprinting') }}"
               >Fingerprinting: The Hidden Trap on the Modern Web</a
             >
           </h2>
@@ -109,7 +123,7 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/firefox-addons.html"
+            <a href="{{ url_for('individual_posts', name='firefox-addons') }}"
               >Cool and Useful Firefox Add-ons I Use Daily</a
             >
           </h2>
@@ -118,7 +132,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/firefox-browser-review.html"
+            <a
+              href="{{ url_for('individual_posts', name='firefox-browser-review') }}"
               >Firefox Is Slowly Becoming Bloatware. Seriously...</a
             >
           </h2>
@@ -127,7 +142,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/google-chrome-case-study.html"
+            <a
+              href="{{ url_for('individual_posts', name='google-chrome-case-study') }}"
               >Google Chrome: The Ultimate Weapon of Google Monopoly</a
             >
           </h2>
@@ -136,7 +152,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/location-tracking.html"
+            <a
+              href="{{ url_for('individual_posts', name='location-tracking') }}"
               >Beyond GPS: The Hidden Ways Your Phone Tracks You</a
             >
           </h2>
@@ -148,7 +165,7 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/meta-privacy.html"
+            <a href="{{ url_for('individual_posts', name='meta-privacy') }}"
               >You Should Stop Using Meta (Facebook) Products at All Costs</a
             >
           </h2>
@@ -157,7 +174,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/online-tracking-methods.html"
+            <a
+              href="{{ url_for('individual_posts', name='online-tracking-methods') }}"
               >Effective Web Tracking Methods in 2026: Explained</a
             >
           </h2>
@@ -168,7 +186,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/short-form-contents.html"
+            <a
+              href="{{ url_for('individual_posts', name='short-form-contents') }}"
               >The Harmful Effects of Watching Short-Form Content.</a
             >
           </h2>
@@ -180,7 +199,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/social-media-detox.html"
+            <a
+              href="{{ url_for('individual_posts', name='social-media-detox') }}"
               >Deleting social media can be a good treat for your brain.</a
             >
           </h2>
@@ -192,7 +212,7 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/trauma.html"
+            <a href="{{ url_for('individual_posts', name='trauma') }}"
               >You Aren't Broken: A Clear Guide to Trauma, Overthinking, and
               Healing</a
             >
@@ -205,7 +225,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/vivaldi-browser-review.html"
+            <a
+              href="{{ url_for('individual_posts', name='vivaldi-browser-review') }}"
               >I Tried Vivaldi on Linux Just to Find Out it's Not for Me</a
             >
           </h2>
@@ -214,7 +235,9 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/nihilism.html">Nihilism: How I Saw the World</a>
+            <a href="{{ url_for('individual_posts', name='nihilism') }}"
+              >Nihilism: How I Saw the World</a
+            >
           </h2>
           <p>
             My perspective on the philosophical theory 'nihilism' on modern
@@ -224,7 +247,8 @@
 
         <article class="post-preview">
           <h2>
-            <a href="posts/social-media-changed-society.html"
+            <a
+              href="{{ url_for('individual_posts', name='social-media-changed-society') }}"
               >Everything Wrong With Social Media</a
             >
           </h2>
@@ -239,10 +263,10 @@
     <footer>
       <p>A site simply built using HTML, CSS & JavaScript</p>
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
+        <a href="{{url_for('privacy')}}">Privacy Policy</a>
       </div>
     </footer>
     <!-- Scripts -->
-    <script src="js/dark-mode.js"></script>
+    <script src="{{url_for('static', filename='js/dark-mode.js')}}"></script>
   </body>
 </html>

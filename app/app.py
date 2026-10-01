@@ -6,19 +6,19 @@ app=Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/posts')
+@app.route('/posts.html')
 def posts():
     return render_template('posts.html')
 
-@app.route('/about')
+@app.route('/about.html')
 def about():
     return render_template('about.html')
 
-@app.route('/privacy')
+@app.route('/privacy.html')
 def privacy():
     return render_template('privacy.html')
 
-@app.route('/posts/<name>')
+@app.route('/posts/<name>.html')
 def individual_posts(name):
     return render_template(f'posts/{name}.html')
 

@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>The Quiet Desk</title>
+    <meta
+      name="description"
+      description="A personal corner to dump my thoughts and opinions on tech, privacy,
+          Linux, and whatever else I’m into."
+    />
+    <meta name="author" content="MindDump009" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles/style.css') }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/favicon.png') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Essential empty div to adjust nav links -->
+        <div></div>
+
+        <div class="nav-links">
+          <a href="{{url_for('index')}}">Home</a>
+          <a href="{{url_for('posts')}}">Posts</a>
+          <a href="{{url_for('about')}}">About</a>
+        </div>
+
+        <!--Theme toggle button-->
+        <button id="toggle" onclick="change()">
+          <img
+            id="toggleIcon"
+            src="{{url_for('static', filename='images/profile/light.png')}}"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <section class="main-sections">
+      <main class="registration">
+        <!--Registration form-->
+        <div class="form-wrapper">
+          <form action="registration" method="post">
+            <div class="form-fields">
+              <div class="field">
+                <div class="label">
+                  <label for="username">Username</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required
+                    autocomplete="username"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="label">
+                  <label for="email">Email</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="label">
+                  <label for="password">Password</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    autocomplete="new-password"
+                  />
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="label">
+                  <label for="confirm">Confirm Password</label>
+                </div>
+                <div class="input">
+                  <input
+                    type="password"
+                    id="confirm"
+                    name="confirm"
+                    required
+                    autocomplete="new-password"
+                  />
+                </div>
+              </div>
+
+              <div class="btn-field">
+                <button class="buttons" type="submit" class="btn-register">
+                  Register
+                </button>
+                <button class="buttons" type="reset" class="btn-reset">
+                  Reset
+                </button>
+                <a class="buttons" href="registration.html" class="btn-cancel"
+                  >Cancel</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <p>A site simply built using HTML, CSS & JavaScript</p>
+      <div class="footer-links">
+        <a href="{{url_for('privacy')}}">Privacy Policy</a>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='js/dark-mode.js')}}"></script>
+  </body>
+</html>

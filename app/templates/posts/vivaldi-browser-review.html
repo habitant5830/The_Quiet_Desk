@@ -33,7 +33,10 @@
 
         <!--Theme toggle button-->
         <button id="toggle" onclick="change2()">
-          <img id="toggleIcon" src="{{url_for('static', filename='images/profile/light.png')}}" />
+          <img
+            id="toggleIcon"
+            src="{{url_for('static', filename='images/profile/light.png')}}"
+          />
         </button>
       </nav>
     </header>
@@ -277,6 +280,5 @@
     </footer>
     <!-- Scripts -->
     <script src="{{url_for('static', filename='js/dark-mode.js')}}"></script>
-  </body>
   </body>
 </html>

@@ -33,7 +33,10 @@
 
         <!--Theme toggle button-->
         <button id="toggle" onclick="change2()">
-          <img id="toggleIcon" src="{{url_for('static', filename='images/profile/light.png')}}" />
+          <img
+            id="toggleIcon"
+            src="{{url_for('static', filename='images/profile/light.png')}}"
+          />
         </button>
       </nav>
     </header>
@@ -165,13 +168,18 @@
         <p>To learn how to mitigate browser-level tracking:</p>
 
         <ul>
-  <li>
-    <a href="{{ url_for('individual_posts', name='fingerprinting') }}">Guide to Browser Fingerprinting</a>
-  </li>
-  <li>
-    <a href="{{ url_for('individual_posts', name='location-tracking') }}">Understanding Location Tracking Vectors</a>
-  </li>
-</ul>   
+          <li>
+            <a href="{{ url_for('individual_posts', name='fingerprinting') }}"
+              >Guide to Browser Fingerprinting</a
+            >
+          </li>
+          <li>
+            <a
+              href="{{ url_for('individual_posts', name='location-tracking') }}"
+              >Understanding Location Tracking Vectors</a
+            >
+          </li>
+        </ul>
 
         <h2>What Makes a VPN Good?</h2>
 
@@ -273,6 +281,5 @@
     </footer>
     <!-- Scripts -->
     <script src="{{url_for('static', filename='js/dark-mode.js')}}"></script>
-  </body>
   </body>
 </html>

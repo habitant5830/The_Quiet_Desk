@@ -289,74 +289,6 @@ td.table-icons img {
   box-shadow: 0 5px 15px var(--rgba-value);
 }
 
-/* Registration form */
-.form-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem;
-  overflow-x: auto;
-}
-
-form {
-  display: inline;
-  gap: 2rem;
-}
-
-.form-fields {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.field {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.label {
-  width: 150px; /* fixed width so inputs line up */
-  flex-shrink: 0;
-}
-
-.input {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
-.input input {
-  padding: 0.3rem;
-  font-size: large;
-}
-
-.btn-field {
-  display: flex;
-  justify-content: center;
-}
-
-/* Homepage register button */
-
-.register-home-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.buttons {
-  display: inline;
-  text-align: center;
-  border: var(--border);
-  border-radius: var(--border-radius);
-  margin: 0 auto;
-  padding: 0.5rem;
-  font-size: 18px;
-  color: black;
-  background-color: lightgray;
-  font-weight: bold;
-}
-
 /*Responsive Designing*/
 
 @media (max-width: 600px) {
@@ -386,9 +318,5 @@ form {
 
   .post-overview {
     gap: 1.5rem;
-  }
-
-  form {
-    max-width: 100%;
   }
 }

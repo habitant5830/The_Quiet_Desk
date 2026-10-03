@@ -8,20 +8,14 @@ try:
     # finding posts titles and urls from hackernews
     
     times = file.find_all('span', class_ = "age")
-
-    for time in times:
-        date = time.find("a")
-        print(date["href"].split("?")[0],date["href"].split("?")[1], ":", date.text)
-        break
-    
     titles = file.find_all('span', class_ = "titleline")
 
-    for title in titles:
-        # finding a tags to parse links
+    for time, title in zip(times, titles):
+        # get title attribute directly
+        date = time["title"]
         link = title.find("a")
-        # printing link url and link text (title) separated by -
-        print(link["href"], "-", link.text)
-        break
+        print(date.split("T")[0], " - ", date.split("T")[1])
+        print(link["href"], "-", link.text)   
 
 except Exception as e:
     print(e)

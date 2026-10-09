@@ -65,6 +65,14 @@ main {
   padding: 2rem 1rem;
 }
 
+/* other pages main sections */
+
+main.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1,
 h2,
 h3 {

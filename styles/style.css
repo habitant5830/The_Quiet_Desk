@@ -41,35 +41,6 @@
   --grid-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
 }
 
-/* Dark mode setup */
-
-.dark-mode {
-  --color: #e8e4f0;
-  --bg-color: #13111a;
-  --primary-color: #c4b8d4;
-  --link-hover: #d5cbe2;
-  --link-active: #e2daf0;
-  --rgba-value: rgba(180, 160, 210, 0.08);
-  --highlight: #1e1a2a;
-  --on-primary: #1a1525;
-  --table-heading: #7a7585;
-  --table-sub-heading: #9a95a5;
-}
-
-/* dark mode invertions */
-
-body.dark-mode .profile-picture {
-  filter: invert(1);
-}
-
-body.dark-mode footer img {
-  filter: invert(1);
-}
-
-body.dark-mode #toggle {
-  filter: invert(1);
-}
-
 /* scrollbar */
 html {
   scrollbar-width: auto;
@@ -108,15 +79,6 @@ h1 {
 
 main.posts {
   max-width: 1200px;
-}
-
-.main-sections {
-  display: flex;
-}
-
-.main-sections main {
-  flex: 1;
-  min-width: 0;
 }
 
 blockquote {
@@ -199,14 +161,26 @@ footer.footer-links {
   gap: 2rem;
 }
 
-/* profile */
+/* home greetings section */
 
-.profile {
+.home {
   text-align: center;
 }
 
-.profile-picture {
+.home-picture {
   width: 200px;
+  height: auto;
+  margin: 2rem auto;
+}
+
+/* profile */
+
+main.profile {
+  align-items: center;
+}
+
+.profile-picture {
+  width: 300px;
   height: auto;
   margin: 2rem auto;
 }
@@ -306,7 +280,7 @@ td.table-icons img {
     gap: 2rem;
   }
 
-  .profile-picture {
+  .home-picture {
     max-width: 40%;
     height: auto;
     margin: 1.5rem;

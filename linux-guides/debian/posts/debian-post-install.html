@@ -15,32 +15,30 @@
   <body>
     <header>
       <nav>
-        <div class="nav-links">
-          <a href="../../../index.html"><h4>Home</h4></a>
-          <a href="../../../posts.html"><h4>Posts</h4></a>
-          <a href="../../../linux-guides/linux_manual.html"><h4>Guides</h4></a>
-          <a href="../../../profile.html"><h4>Profile</h4></a>
-        </div>
+        <h4><a href="../../../index.html">Home</a></h4>
+        <h4><a href="../../../posts.html">Posts</a></h4>
+        <h4><a href="../../../linux-guides/linux_manual.html">Guides</a></h4>
+        <h4><a href="../../../profile.html">Profile</a></h4>
       </nav>
     </header>
 
     <main class="posts">
       <h1>Debian Post Install Guide for Modern Hardwares</h1>
       <div>
-        <p class="article">
+        <p>
           Debian is a well-known rock-solid Linux distribution. Because of its
           stability over many rolling and semi-rolling linux distributions, many
           LTS-based Linux distributions like Ubuntu, Tails, Kali Linux, etc.
           chose debian as a base.
         </p>
 
-        <p class="article">
+        <p>
           Even though Debian is much more mature and stable, by default it is
           designed for older hardware-based systems and don't give a good
           performance on modern hardware out of the box.
         </p>
 
-        <p class="article">
+        <p>
           Today I would like to give you some advice on how to make Debian.
           excellently supported enough to daily drive on your modern hardware
           system. Let's dive in.
@@ -48,36 +46,34 @@
 
         <h2>Enable Sudo Access.</h2>
 
-        <p class="article">
+        <p>
           The first thing to do is enable sudo access for the user currently.
           logged in if you didn't do it while in the installation process.
         </p>
 
-        <p class="article">Open the terminal and log in as root:</p>
+        <p>Open the terminal and log in as root:</p>
 
         <div class="code">
           <code>> su -</code>
         </div>
 
-        <p class="article">Add the username to the sudo group:</p>
+        <p>Add the username to the sudo group:</p>
 
         <div class="code">
           <code>> usermod -aG sudo <-username-></code>
         </div>
 
-        <p class="article">
-          Log out, then log back in or just perform a reboot.
-        </p>
+        <p>Log out, then log back in or just perform a reboot.</p>
 
         <h2>Enable contrib, non-free, and non-free-firmware repositories.</h2>
 
-        <p class="article">Access the Debian official repositories file.</p>
+        <p>Access the Debian official repositories file.</p>
 
         <div class="code">
           <code>> sudo nano /etc/apt/sources.list</code>
         </div>
 
-        <p class="article">
+        <p>
           Add the contrib, non-free, and non-free-firmware keywords exactly as
           given below:
         </p>
@@ -103,7 +99,7 @@
           </code>
         </div>
 
-        <p class="article">Update repositories:</p>
+        <p>Update repositories:</p>
 
         <div class="code">
           <code>> sudo apt update && sudo apt upgrade</code>
@@ -111,7 +107,7 @@
 
         <h2>Install Essential Packages</h2>
 
-        <p class="article">
+        <p>
           Especially for modern hardware, we have to ensure that microcode,
           graphic drivers and power management tools are installed to prevent
           throttling and high power usage.
@@ -140,7 +136,7 @@
 
         <h3>Power management tools</h3>
 
-        <p class="article">
+        <p>
           Here I am going to instruct you to install a power management tool
           called
 
@@ -169,7 +165,7 @@
           <code>> sudo systemctl enable --now thermald</code>
         </div>
 
-        <p class="article">Check the current status by using the following:</p>
+        <p>Check the current status by using the following:</p>
 
         <div class="code">
           <code>> tlp-stat -s</code>
@@ -190,7 +186,7 @@
           >
         </div>
 
-        <p class="article">Verify hardware acceleration using:</p>
+        <p>Verify hardware acceleration using:</p>
 
         <div class="code">
           <code>> vainfo</code>
@@ -204,25 +200,25 @@
           firmware updates via terminal, then you can use this method.
         </blockquote>
 
-        <p class="article">Download the fwupd package:</p>
+        <p>Download the fwupd package:</p>
 
         <div class="code">
           <code>> sudo apt install fwupd</code>
         </div>
 
-        <p class="article">Check for updates:</p>
+        <p>Check for updates:</p>
 
         <div class="code">
           <code>> fwupdmgr refresh</code>
         </div>
 
-        <p class="article">Get available updates:</p>
+        <p>Get available updates:</p>
 
         <div class="code">
           <code>> fwupdmgr get-updates</code>
         </div>
 
-        <p class="article">Apply updates:</p>
+        <p>Apply updates:</p>
 
         <div class="code">
           <code>> fwupdmgr update</code>
@@ -230,29 +226,25 @@
 
         <h2>Install and set up Flatpak.</h2>
 
-        <p class="article">Install flatpak:</p>
+        <p>Install flatpak:</p>
 
         <div class="code">
           <code>> sudo apt install flatpak</code>
         </div>
 
-        <p class="article">
-          Add the Flathub integration plugin for gnome-software in gnome:
-        </p>
+        <p>Add the Flathub integration plugin for gnome-software in gnome:</p>
 
         <div class="code">
           <code>> sudo apt install gnome-software-plugin-flatpak</code>
         </div>
 
-        <p class="article">
-          Add the Flathub integration plugin for Plasma Discover in KDE:
-        </p>
+        <p>Add the Flathub integration plugin for Plasma Discover in KDE:</p>
 
         <div class="code">
           <code>> sudo apt install plasma-discover-backend-flatpak</code>
         </div>
 
-        <p class="article">Add the Flathub repository:</p>
+        <p>Add the Flathub repository:</p>
 
         <div class="code">
           <code
@@ -261,14 +253,12 @@
           >
         </div>
 
-        <p class="article">
-          Now reboot the system. That's it; everything works perfectly.
-        </p>
+        <p>Now reboot the system. That's it; everything works perfectly.</p>
       </div>
     </main>
 
     <footer>
-      <div class="footer-links">
+      <div>
         <p>©️ 2026 | TheQuietDesk</p>
         <a href="../privacy.html">Privacy Policy</a>
       </div>

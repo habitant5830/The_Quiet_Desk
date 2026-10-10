@@ -15,12 +15,10 @@
   <body>
     <header>
       <nav>
-        <div class="nav-links">
-          <a href="../index.html"><h4>Home</h4></a>
-          <a href="../posts.html"><h4>Posts</h4></a>
-          <a href="../linux-guides/linux_manual.html"><h4>Guides</h4></a>
-          <a href="../profile.html"><h4>Profile</h4></a>
-        </div>
+        <h4><a href="../index.html">Home</a></h4>
+        <h4><a href="../posts.html">Posts</a></h4>
+        <h4><a href="../linux-guides/linux_manual.html">Guides</a></h4>
+        <h4><a href="../profile.html">Profile</a></h4>
       </nav>
     </header>
 
@@ -29,13 +27,13 @@
         <h1>I Tried Vivaldi on Linux Just to Find Out it's Not for Me</h1>
 
         <div>
-          <p class="article">
+          <p>
             Hi guys, actually I was a hardcore Firefox and Brave browser user.
             Which means I have already used some of the most powerful browsers
             available today.
           </p>
 
-          <p class="article">
+          <p>
             Some days ago I posted a negative review about the Vivaldi browser,
             and another person commented that Vivaldi is not just a Chrome fork,
             but more than that. So I thought:
@@ -45,11 +43,11 @@
             >
           </p>
 
-          <p class="article">So I installed it and tried it out.</p>
+          <p>So I installed it and tried it out.</p>
 
           <h2>Installation &amp; First Impressions</h2>
 
-          <p class="article">
+          <p>
             I am running Debian (for some reason I switched to Fedora KDE).
             Native Debian repositoriesitories don't carry Vivaldi, but it's
             easily downloadable from their official website as a `.deb` package.
@@ -57,7 +55,7 @@
             repositoriesitory to your Debian source list for automatic updates.
           </p>
 
-          <p class="article">
+          <p>
             When I first launched Vivaldi, it welcomed me with a setup wizard. I
             needed to click through <strong>6 to 7 times</strong> on the "Next"
             button just to land on the actual start page. I expected a minimal
@@ -65,13 +63,13 @@
             customization push.
           </p>
 
-          <p class="article">
+          <p>
             On the default homepage, there are several built-in speed dial
             bookmarks. These are likely Vivaldi's sponsors and partners—after
             all, they have to generate revenue to maintain the project.
           </p>
 
-          <p class="article">
+          <p>
             The default search engine is <strong>Startpage</strong>, which is a
             great choice!
             <i
@@ -80,22 +78,22 @@
             >
           </p>
 
-          <p class="article">---</p>
+          <p>---</p>
 
           <h2>Customization &amp; Sync</h2>
 
-          <p class="article">
+          <p>
             There are tons of options to customize the browser and make it your
             own, including a built-in sync feature to keep settings aligned
             across platforms.
           </p>
 
-          <p class="article">
+          <p>
             However, Sync doesn't seem to sync <i>everything</i>. Only basic
             browser settings transferred over.
           </p>
 
-          <p class="article">Extension settings were a hit or miss:</p>
+          <p>Extension settings were a hit or miss:</p>
 
           <ul>
             <li>
@@ -110,15 +108,13 @@
             </li>
           </ul>
 
-          <p class="article">---</p>
+          <p>---</p>
 
           <h2>The Built-in Ad &amp; Tracker Blocker</h2>
 
-          <p class="article">
-            I really need to talk about Vivaldi's built-in blocker.
-          </p>
+          <p>I really need to talk about Vivaldi's built-in blocker.</p>
 
-          <p class="article">
+          <p>
             Vivaldi ships with an ad and tracker blocking shield (turned off by
             default), but it feels <strong>much less efficient</strong> at
             eliminating ads and cosmetic filter clutter on web pages. On popular
@@ -126,16 +122,16 @@
             ads and promotional banners.
           </p>
 
-          <p class="article">
+          <p>
             Running online tracker blocking tests never yielded a 100%
             protection score using just Vivaldi's native shield.
           </p>
 
-          <p class="article">---</p>
+          <p>---</p>
 
           <h2>Extension Nightmare &amp; Manifest V3 (MV3)</h2>
 
-          <p class="article">
+          <p>
             In cases where built-in blockers fail, extensions and filter lists
             usually come to the rescue. But recently, installing and managing
             extensions on Vivaldi has turned into a hassle.
@@ -162,34 +158,32 @@
             </li>
           </ol>
 
-          <p class="article">
+          <p>
             I know this isn't intentionally done by Vivaldi—Google's
             architectural shifts caused this. But Google completely wiped
             <strong>Manifest V2 (MV2)</strong> from Chromium-based browsers
             (except ungoogled-chromium, Brave, Helium, etc.).
           </p>
 
-          <p class="article">
+          <p>
             Vivaldi is an independent company—why follow Google's strict
             playbook so closely? Why not make their native adblocker
             significantly more powerful, or build direct compatibility for
             <strong>uBlock Origin</strong> or <strong>AdGuard</strong>?
           </p>
 
-          <p class="article">
+          <p>
             I eventually figured out a way to sideload uBlock, but it still
             doesn't function as flawlessly as it used to.
           </p>
 
-          <p class="article">---</p>
+          <p>---</p>
 
           <h2>The uBlock Lite Crash Loop</h2>
 
-          <p class="article">
-            Many users suggest switching to <strong>uBlock Lite</strong>.
-          </p>
+          <p>Many users suggest switching to <strong>uBlock Lite</strong>.</p>
 
-          <p class="article">
+          <p>
             While uBlock Lite now supports adding custom filter lists, adding 3
             external lists caused the extension to
             <strong>crash consistently</strong> inside Vivaldi. Reopening the
@@ -198,15 +192,13 @@
             extension, wiping out any custom configurations.
           </p>
 
-          <p class="article">---</p>
+          <p>---</p>
 
           <h2>Desktop Environment Quirks (KDE vs. GNOME)</h2>
 
-          <p class="article">
-            On <strong>KDE (Wayland)</strong>, the browser ran smoothly.
-          </p>
+          <p>On <strong>KDE (Wayland)</strong>, the browser ran smoothly.</p>
 
-          <p class="article">
+          <p>
             However, on <strong>GNOME</strong>, I couldn't drag and reorder
             installed extensions on the toolbar by holding `Ctrl`. While GNOME
             is infamous for weaker drag-and-drop support, this toolbar
@@ -214,42 +206,42 @@
             ungoogled-chromium, Helium, Firefox).
           </p>
 
-          <p class="article">
+          <p>
             Opening a support thread on the Vivaldi forums didn't yield a clear
             resolution either.
           </p>
 
-          <p class="article">---</p>
+          <p>---</p>
 
           <h2>Conclusion</h2>
 
-          <p class="article">
+          <p>
             At the end of the day, Vivaldi is a solid browser if you prioritize
             <strong>productivity</strong>,
             <strong>heavy visual customization</strong>, and an abundance of
             granular controls.
           </p>
 
-          <p class="article">
+          <p>
             But what about <strong>privacy</strong>? Is there anything truly
             privacy-centric beyond an insufficient built-in ad/tracker blocker?
           </p>
 
-          <p class="article">
+          <p>
             I really hope Vivaldi and its developer team take a deeper look into
             modern web privacy protections and level up their ad-blocking
             engine.
           </p>
 
-          <p class="article"><br /><br /></p>
+          <p><br /><br /></p>
 
-          <p class="article"><i>Thank you for reading!</i></p>
+          <p><i>Thank you for reading!</i></p>
         </div>
       </article>
     </main>
 
     <footer>
-      <div class="footer-links">
+      <div>
         <p>©️ 2026 | TheQuietDesk</p>
         <a href="../privacy.html">Privacy Policy</a>
       </div>

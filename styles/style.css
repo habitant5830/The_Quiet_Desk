@@ -12,18 +12,16 @@
 
   /* color variables */
   --color: #180501;
-  --primary-color: #8000ff;
-  --bg-color: #f6edff;
-  --code-bg-color: #e4c8ff;
-  --link: #8912ff;
-  --link-hover: #9224ff;
-  --link-active: #9b37ff;
-  --rgba-value: rgba(220, 208, 255);
-  --highlight: #a449ff;
-  --border-color: #9224ff;
-  --table-heading: #a449ff;
+  --primary-color: #16b7cd;
+  --bg-color: #f8ffe5;
+  --code-bg-color: #e8ffa9;
+  --link: #c13153;
+  --link-hover: #dd5474;
+  --link-active: #95616d;
+  --border-color: #1b9aaa;
+  --table-heading: #1b9aaa;
   --table-heading-color: #ffffff;
-  --table-sub-heading: #b66dff;
+  --table-sub-heading: #16b7cd;
 
   /* other variables */
   --border-radius: 12px;
@@ -102,42 +100,46 @@ blockquote {
 }
 
 header {
-  border: var(--border);
   border-radius: var(--border-radius);
-  background-color: var(--bg-color);
-  padding: 1rem;
+  background-color: var(--primary-color);
   margin: 0.5rem 1rem;
 }
 
-header nav {
-  overflow: hidden;
+nav {
   display: flex;
   gap: 2rem;
   justify-content: center;
 }
 
-.nav-links {
-  display: flex;
-  gap: 2rem;
+nav a {
+  color: #ffffff;
 }
 
-.nav-links h4 {
+/* footer section */
+
+footer {
+  max-width: 100%;
+  text-align: center;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
+  margin: 0 1rem 0.5rem;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+footer div p {
   margin: 0;
 }
 
-/* Theme toggle */
-
-button#toggle {
-  justify-self: end;
-}
-
-button img {
-  width: 24px;
-}
-
-p.article {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+footer div p,
+footer div a {
+  color: #ffffff;
 }
 
 /* link states */
@@ -153,25 +155,6 @@ a:hover {
 
 a:active {
   color: var(--link-active);
-}
-
-/* footer section */
-
-footer {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  text-align: center;
-  border: var(--border);
-  border-radius: var(--border-radius);
-  background-color: var(--bg-color);
-  padding: 1rem;
-  margin: 0 1rem 0.5rem;
-}
-
-footer.footer-links {
-  display: flex;
-  gap: 2rem;
 }
 
 /* home greetings section */
@@ -304,8 +287,6 @@ td h4 {
   padding: 1rem;
   text-align: center;
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 10px var(--rgba-value); /* Subtle depth */
-  transition: box-shadow 0.3s ease; /* Smooth glide effect */
 }
 
 .post-overview .post-preview:hover {

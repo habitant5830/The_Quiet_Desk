@@ -15,12 +15,10 @@
   <body>
     <header>
       <nav>
-        <div class="nav-links">
-          <a href="../index.html"><h4>Home</h4></a>
-          <a href="../posts.html"><h4>Posts</h4></a>
-          <a href="../linux-guides/linux_manual.html"><h4>Guides</h4></a>
-          <a href="../profile.html"><h4>Profile</h4></a>
-        </div>
+        <h4><a href="../index.html">Home</a></h4>
+        <h4><a href="../posts.html">Posts</a></h4>
+        <h4><a href="../linux-guides/linux_manual.html">Guides</a></h4>
+        <h4><a href="../profile.html">Profile</a></h4>
       </nav>
     </header>
 
@@ -29,7 +27,7 @@
         <h1>Effective Web Tracking Methods in 2026: Explained</h1>
 
         <div>
-          <p class="article">
+          <p>
             In 2026, the web and the technologies used in it have evolved a lot.
             This has also led to the effectiveness of online tracking methods,
             which made it nearly impossible to prevent. Once we defined online
@@ -39,7 +37,7 @@
             many are invisible. At the end, they identify, profile, and follow
             users across the internet 24x7.
           </p>
-          <p class="article">
+          <p>
             A lot happened in recent years that can drastically decrease the
             online privacy of Internet users. The rise of Google's privacy
             sandbox APIs and sophisticated fingerprinting techniques reshaped
@@ -47,7 +45,7 @@
             market acts have pushed trackers towards more covert methods that
             don't even require user consent.
           </p>
-          <p class="article">
+          <p>
             <strong
               >To avoid cookie banners and consent requirements, popular
               advertisements and tech platforms shifted toward more covert,
@@ -55,7 +53,7 @@
               privacy sandbox, etc.</strong
             >
           </p>
-          <p class="article">
+          <p>
             This article explains various browser tracking methods that are
             effectively used in 2026 to track and profile users. Also, we
             discuss the solutions for each of the tracking methods. What
@@ -70,18 +68,18 @@
             Mullvad, Zen, or a hardened Firefox setup.
           </blockquote>
           <h2>1. First-Party Cookies</h2>
-          <p class="article">
+          <p>
             Cookies are a mechanism that is used to
             <strong
               >store data about websites you visit, your preferences, etc.
               locally in your browser</strong
             >.
           </p>
-          <p class="article">
+          <p>
             The <strong>first party</strong> term indicates the
             <strong>actual domain you are visiting</strong> (root domain).
           </p>
-          <p class="article">
+          <p>
             Cookies were a very good idea, which made a user's browsing session
             functional and more user-friendly. As always, no matter how good a
             functionality is, big tech companies like Google, Meta, Amazon, etc.
@@ -89,15 +87,15 @@
             mechanisms they developed, cookies are now used for tracking users
             across sites.
           </p>
-          <p class="article">For example:</p>
-          <p class="article">
+          <p>For example:</p>
+          <p>
             <i
               >You logged in to YouTube on google chrome, and that's your
               primary browser. You visit a news site in that same browser, and
               Google gets your interaction data linked to your own Google ID.</i
             >
           </p>
-          <p class="article">
+          <p>
             This happened because nowadays every website has embedded Google,
             Facebook, and various social media trackers. So even if you have a
             wide-spectrum ad blocker like uBlock Origin, AdGuard, Privacy
@@ -145,11 +143,11 @@
             </li>
           </ul>
           <h2>2. Browser Fingerprinting</h2>
-          <p class="article">
+          <p>
             It is by far the most powerful, accurate, and effective method
             deployed using scripts on every single website.
           </p>
-          <p class="article">
+          <p>
             Unlike cookies, fingerprinting stores nothing locally on your
             computer. Instead, it collects dozens of hardware and software
             signals to <strong>generate a near-unique fingerprint</strong>,
@@ -194,7 +192,7 @@
             </li>
           </ul>
           <h2>3. Third-party cookies.</h2>
-          <p class="article">
+          <p>
             Third-party cookies are used to
             <strong>track you across websites</strong>. But actually, it is the
             easiest tracking method to block and prevent so far. Even Google
@@ -211,16 +209,14 @@
             <li>No website will break at all.</li>
           </ul>
           <h2>4. Supercookies.</h2>
-          <p class="article">
-            These are a type of <strong>unkillable cookie</strong>.
-          </p>
-          <p class="article">
+          <p>These are a type of <strong>unkillable cookie</strong>.</p>
+          <p>
             Supercookies exploit browser mechanisms that were never designed for
             tracking in the first place, making them extremely harder to detect
             and remove.
           </p>
           <h3>HSTS Supercookies.</h3>
-          <p class="article">
+          <p>
             HSTS stands for HTTP Strict Transport Security. It tells the browser
             to always use HTTPS for specific websites. Trackers abuse this by
             loading a unique combination of subdomains over HTTPS and some in
@@ -228,35 +224,35 @@
             browser's HSTS cache then stores a binary pattern that functions as
             a unique identifier.
           </p>
-          <p class="article">
+          <p>
             Clearing this requires manual resetting of HSTS settings, which many
             users are not even aware of.
           </p>
           <h3>Favicon cache tracking.</h3>
-          <p class="article">
+          <p>
             It misuses the fact that browser cache favicons are stored
             separately from regular browsing data. A tracker assigns each user a
             unique sequence of redirects through subdomains with distinct
             favicons on constant visits. Then the browser's favicon cache
             reveals the stored pattern.
           </p>
-          <p class="article">
+          <p>
             This is an effective cookie that even survives incognito mode, cache
             clearing, and VPNs.
           </p>
           <h3>TLS Session ID Tracking.</h3>
-          <p class="article">
+          <p>
             TLS session resumption mechanisms (session IDs and session tickets)
             allow servers to identify returning connections without the need of
             a full handshake. Even if it is designed for performance, it can
             also be used as a short-living tracking identifier.
           </p>
-          <p class="article">
+          <p>
             Even though the life span of these cookies is short, they are
             virtually invisible to users.
           </p>
           <h3>Evercookies</h3>
-          <p class="article">
+          <p>
             This writes a single tracking ID simultaneously to 10+ different
             browser vectors, such as:
           </p>
@@ -266,7 +262,7 @@
             <li>Web Workers / Cache API</li>
             <li>CSS history &amp; Canvas fingerprinting</li>
           </ul>
-          <p class="article">
+          <p>
             Then even if you delete 9 traces stored, the script will find one
             survived trace and silently restore 9 others on your next visit.
           </p>
@@ -298,7 +294,7 @@
             </li>
           </ul>
           <h2>5. ETag Tracking.</h2>
-          <p class="article">
+          <p>
             <strong>ETags are HTTP cache validators</strong>. When a browser
             requests a resource, the server sends back an ETag header with a
             unique identifier. Then on subsequent requests, the browser sends
@@ -306,7 +302,7 @@
             has a unique ETag value, and this turns the browser cache into a
             tracking cookie.
           </p>
-          <p class="article">
+          <p>
             Because ETags are stored in the HTTP cache, and not in the cookie
             jar, a cookie deletion won't delete it.
           </p>
@@ -336,7 +332,7 @@
             <li>Extensions Like Ublock Origin, Adguard and ClearURLs.</li>
           </ul>
           <h2>6. Bounce tracking.</h2>
-          <p class="article">
+          <p>
             When you click a link, instead of a direct connection to the
             destination, you will be redirected to a tracking domain. By doing
             this, the tracking domain sets a first-party cookie in the user's
@@ -368,7 +364,7 @@
             </li>
           </ul>
           <h2>7. CNAME cloaking.</h2>
-          <p class="article">
+          <p>
             It is a DNS-level tracking technique. A website creates a subdomain
             (like track.domain.com) that resolves via a CNAME record to a
             third-party tracking server. From the browser perspective, the
@@ -402,7 +398,7 @@
             </li>
           </ul>
           <h2>8. Login Fingerprinting.</h2>
-          <p class="article">
+          <p>
             By using this method websites can detect whether you are logged into
             popular services like Google, Facebook, Twitter, Amazon, etc. by
             embedding hidden resources that behave differently for logged-in and
@@ -410,7 +406,7 @@
             online accounts. This profile is remarkably stable and uniquely
             identifying.
           </p>
-          <p class="article">
+          <p>
             For example, if you're logged in to Gmail, LinkedIn, and Spotify
             simultaneously in the same browser, then very few other users share
             that exact information.
@@ -442,7 +438,7 @@
           <h2>
             9. Google Privacy Sandbox API. (<strong>Discontinued</strong>)
           </h2>
-          <p class="article">
+          <p>
             Google's privacy sandbox is a
             <strong>failed industry experiment</strong>. Without eliminating
             complete tracking, it moves tracking into browser-mediated APIs that
@@ -495,14 +491,14 @@
             intentionally added to real data.
           </blockquote>
           <h3>Status of Google Privacy Sandbox API in 2026</h3>
-          <p class="article">
+          <p>
             Google completely abandoned this plan after years of pushback from
             privacy groups, regulators, and advertisers. They officially retired
             the Privacy Sandbox APIs and decided to keep third-party cookies in
             Chrome.
           </p>
           <h2>Conclusion.</h2>
-          <p class="article">
+          <p>
             Every tracking method explained above shares one fundamental base:
             that the browser environment remains the same between visits and
             across sites. <strong>Browser/profile isolation</strong> solves most
@@ -527,14 +523,14 @@
             </li>
             <li>Block unnecessary scripts and iframes by default.</li>
           </ul>
-          <p class="article">Hope this article is helpful to you.</p>
-          <p class="article">Thank you for reading.</p>
+          <p>Hope this article is helpful to you.</p>
+          <p>Thank you for reading.</p>
         </div>
       </article>
     </main>
 
     <footer>
-      <div class="footer-links">
+      <div>
         <p>©️ 2026 | TheQuietDesk</p>
         <a href="../privacy.html">Privacy Policy</a>
       </div>

@@ -271,27 +271,18 @@ td h4 {
   margin: 0;
 }
 
-/* posts page */
+/* grid display */
 
-.post-overview {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 350px));
-  justify-content: center;
-  gap: 2rem;
-  max-width: 1200px;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.post-overview .post-preview {
+.grid-column {
   border: var(--border);
-  background-color: var(--bg-color);
   padding: 1rem;
-  text-align: center;
   border-radius: var(--border-radius);
-}
-
-.post-overview .post-preview:hover {
-  transform: none;
-  box-shadow: 0 5px 15px var(--rgba-value);
 }
 
 /*Responsive Designing*/
@@ -319,5 +310,9 @@ td h4 {
 
   .post-overview {
     gap: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
   }
 }

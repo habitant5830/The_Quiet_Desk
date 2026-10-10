@@ -145,6 +145,12 @@ a:active {
   color: var(--link-active);
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* home greetings section */
 
 .home-greeting {
@@ -241,6 +247,11 @@ a:active {
   padding: 0.25rem;
 }
 
+.quotes-section figure {
+  margin: 5px;
+  text-align: justify;
+}
+
 .quotes-section figcaption {
   margin-top: 1rem;
 }
@@ -251,51 +262,46 @@ a:active {
 
 /* table customization */
 
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-}
-
 table {
-  width: 100%;
-  margin: 2rem auto;
-  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  width: 80%;
+  border-radius: 10px;
   border-collapse: collapse;
+  overflow: hidden;
 }
 
-table,
-tr,
+th,
 td {
-  border-bottom: 1px solid var(--color);
-  padding: 1rem;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dddddd;
 }
 
 th {
-  padding: 1rem 2rem;
-  text-align: center;
-  background-color: var(--table-heading);
-  color: var(--table-heading-color);
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+tr {
+  background-color: #f3f3f3;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+tr:nth-child(even) {
+  background-color: #e9e9e9;
+}
+
+.table-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
 }
 
 .th-sections {
-  padding: 1rem 2rem;
   text-align: center;
-  background-color: var(--table-sub-heading);
-  color: var(--table-heading-color);
-}
-
-td.table-icons {
-  text-align: center;
-}
-
-td.table-icons img {
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-}
-
-td h4 {
-  margin: 0;
 }
 
 /* grid display */
@@ -341,10 +347,6 @@ td h4 {
 /*Responsive Designing*/
 
 @media (max-width: 600px) {
-  .main-sections {
-    flex-direction: column;
-  }
-
   main {
     max-width: 100%;
     margin: 0 auto;
@@ -361,8 +363,8 @@ td h4 {
     margin: 1.5rem;
   }
 
-  .post-overview {
-    gap: 1.5rem;
+  table {
+    width: 100%;
   }
 
   .grid {

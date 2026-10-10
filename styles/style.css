@@ -6,8 +6,9 @@
 
 :root {
   font-family: sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1rem;
+  text-align: left;
 
   /* color variables */
   --color: #180501;
@@ -23,8 +24,6 @@
   --table-heading: #a449ff;
   --table-heading-color: #ffffff;
   --table-sub-heading: #b66dff;
-  --table-heading-font-size: 1.5rem;
-  --table-sub-heading-font-size: 0.95rem;
 
   /* other variables */
   --border-radius: 12px;
@@ -44,7 +43,6 @@ body {
   height: 100%;
   background-color: var(--bg-color);
   color: var(--color);
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
   line-height: 1.75; /* Slightly increase from 1.6 */
 }
 
@@ -85,7 +83,6 @@ h6 {
 
 code {
   background-color: var(--code-bg-color);
-  font-family: monospace;
   padding: 0.5rem;
 }
 
@@ -179,13 +176,10 @@ footer.footer-links {
 
 /* home greetings section */
 
-.home {
-  text-align: center;
-}
-
-.home h1,
-.home h2 {
-  font-family: cursive;
+.home-greeting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home-picture {
@@ -254,7 +248,6 @@ main.profile {
 
 table {
   width: 100%;
-  font-size: large;
   margin: 2rem auto;
   border-radius: var(--border-radius);
   border-collapse: collapse;
@@ -264,7 +257,6 @@ table,
 tr,
 td {
   border-bottom: 1px solid var(--color);
-  text-align: left;
   padding: 1rem;
 }
 
@@ -273,7 +265,6 @@ th {
   text-align: center;
   background-color: var(--table-heading);
   color: var(--table-heading-color);
-  font-size: var(--table-heading-font-size);
 }
 
 .th-sections {
@@ -281,7 +272,6 @@ th {
   text-align: center;
   background-color: var(--table-sub-heading);
   color: var(--table-heading-color);
-  font-size: var(--table-sub-heading-font-size);
 }
 
 td.table-icons {

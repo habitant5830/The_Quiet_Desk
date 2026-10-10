@@ -32,7 +32,7 @@
 /* scrollbar */
 html {
   scrollbar-width: auto;
-  scrollbar-color: var(--color) var(--bg-color);
+  scrollbar-color: var(--primary-color) var(--bg-color);
 }
 
 body {

@@ -24,7 +24,248 @@
       </nav>
     </header>
 
-    <main class="posts"></main>
+    <main class="posts">
+      <h1>Debian Post Install Guide for Modern Hardwares</h1>
+      <div>
+        <p class="article">
+          Debian is a well-known rock-solid Linux distribution. Because of its
+          stability over many rolling and semi-rolling linux distributions, many
+          LTS-based Linux distributions like Ubuntu, Tails, Kali Linux, etc.
+          chose debian as a base.
+        </p>
+
+        <p class="article">
+          Even though Debian is much more mature and stable, by default it is
+          designed for older hardware-based systems and don't give a good
+          performance on modern hardware out of the box.
+        </p>
+
+        <p class="article">
+          Today I would like to give you some advice on how to make Debian.
+          excellently supported enough to daily drive on your modern hardware
+          system. Let's dive in.
+        </p>
+
+        <h2>Enable Sudo Access.</h2>
+
+        <p class="article">
+          The first thing to do is enable sudo access for the user currently.
+          logged in if you didn't do it while in the installation process.
+        </p>
+
+        <p class="article">Open the terminal and log in as root:</p>
+
+        <div class="code">
+          <code>> su -</code>
+        </div>
+
+        <p class="article">Add the username to the sudo group:</p>
+
+        <div class="code">
+          <code>> usermod -aG sudo <-username-></code>
+        </div>
+
+        <p class="article">
+          Log out, then log back in or just perform a reboot.
+        </p>
+
+        <h2>Enable contrib, non-free, and non-free-firmware repositories.</h2>
+
+        <p class="article">Access the Debian official repositories file.</p>
+
+        <div class="code">
+          <code>> sudo nano /etc/apt/sources.list</code>
+        </div>
+
+        <p class="article">
+          Add the contrib, non-free, and non-free-firmware keywords exactly as
+          given below:
+        </p>
+
+        <div class="code">
+          <code>
+            > deb https://deb.debian.org/debian trixie main contrib non-free
+            non-free-firmware
+          </code>
+
+          <br />
+
+          <code>
+            > deb https://deb.debian.org/debian trixie-updates main contrib
+            non-free non-free-firmware
+          </code>
+
+          <br />
+
+          <code>
+            > deb https://security.debian.org/debian-security trixie-security
+            main contrib non-free non-free-firmware
+          </code>
+        </div>
+
+        <p class="article">Update repositories:</p>
+
+        <div class="code">
+          <code>> sudo apt update && sudo apt upgrade</code>
+        </div>
+
+        <h2>Install Essential Packages</h2>
+
+        <p class="article">
+          Especially for modern hardware, we have to ensure that microcode,
+          graphic drivers and power management tools are installed to prevent
+          throttling and high power usage.
+        </p>
+
+        <blockquote>
+          Note: This varies for the processor you are using. I am using an Intel
+          i5 processor, so installing tools required for Intel-based systems.
+        </blockquote>
+
+        <h3>Install microcode and drivers</h3>
+
+        <div class="code">
+          <code
+            >> sudo apt install intel-microcode firmware-misc-nonfree
+            intel-media-va-driver-non-free mesa-va-drivers firmware-linux
+            firmware-linux-nonfree</code
+          >
+        </div>
+
+        <h3>Install hardware monitoring tools</h3>
+
+        <div class="code">
+          <code>> sudo apt install lm-sensors intel-gpu-tools</code>
+        </div>
+
+        <h3>Power management tools</h3>
+
+        <p class="article">
+          Here I am going to instruct you to install a power management tool
+          called
+
+          <strong>TLP</strong>. If you are okay with the default power
+          Management tools <strong>power-profiles-daemon</strong> skip this
+          step.
+        </p>
+
+        <div class="code">
+          <code>> sudo apt install tlp tlp-rdw thermald</code>
+        </div>
+
+        <blockquote>
+          Caution: Installing <strong>tlp</strong> alongside
+          power-profiles-daemon auto uninstalls power-profiles-daemon. You
+          cannot use both at the same time.
+        </blockquote>
+
+        <p class="">Enable TLP services and thermald:</p>
+
+        <div class="code">
+          <code>> sudo systemctl enable --now tlp.service</code>
+
+          <br />
+
+          <code>> sudo systemctl enable --now thermald</code>
+        </div>
+
+        <p class="article">Check the current status by using the following:</p>
+
+        <div class="code">
+          <code>> tlp-stat -s</code>
+        </div>
+
+        <h2>Configure touchpad and gestures (Wayland).</h2>
+
+        <div class="code">
+          <code>> sudo apt install libinput-tools</code>
+        </div>
+
+        <h2>Multimedia codecs and hardware acceleration</h2>
+
+        <div class="code">
+          <code
+            >> sudo apt install ffmpeg gstreamer1.0-plugins-ugly
+            gstreamer1.0-plugins-bad gstreamer1.0-libav vainfo</code
+          >
+        </div>
+
+        <p class="article">Verify hardware acceleration using:</p>
+
+        <div class="code">
+          <code>> vainfo</code>
+        </div>
+
+        <h2>Firmware updates using the fwupd package</h2>
+
+        <blockquote>
+          You can easily do all updates, including apt, flatpak, and firmware,
+          via plasma-discover software. If you prefer manual checking of
+          firmware updates via terminal, then you can use this method.
+        </blockquote>
+
+        <p class="article">Download the fwupd package:</p>
+
+        <div class="code">
+          <code>> sudo apt install fwupd</code>
+        </div>
+
+        <p class="article">Check for updates:</p>
+
+        <div class="code">
+          <code>> fwupdmgr refresh</code>
+        </div>
+
+        <p class="article">Get available updates:</p>
+
+        <div class="code">
+          <code>> fwupdmgr get-updates</code>
+        </div>
+
+        <p class="article">Apply updates:</p>
+
+        <div class="code">
+          <code>> fwupdmgr update</code>
+        </div>
+
+        <h2>Install and set up Flatpak.</h2>
+
+        <p class="article">Install flatpak:</p>
+
+        <div class="code">
+          <code>> sudo apt install flatpak</code>
+        </div>
+
+        <p class="article">
+          Add the Flathub integration plugin for gnome-software in gnome:
+        </p>
+
+        <div class="code">
+          <code>> sudo apt install gnome-software-plugin-flatpak</code>
+        </div>
+
+        <p class="article">
+          Add the Flathub integration plugin for Plasma Discover in KDE:
+        </p>
+
+        <div class="code">
+          <code>> sudo apt install plasma-discover-backend-flatpak</code>
+        </div>
+
+        <p class="article">Add the Flathub repository:</p>
+
+        <div class="code">
+          <code
+            >> sudo flatpak remote-add --if-not-exists flathub
+            https://dl.flathub.org/repo/flathub.flatpakrepo</code
+          >
+        </div>
+
+        <p class="article">
+          Now reboot the system. That's it; everything works perfectly.
+        </p>
+      </div>
+    </main>
 
     <footer>
       <div class="footer-links">

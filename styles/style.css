@@ -206,6 +206,45 @@ main.profile {
   margin: 2rem auto;
 }
 
+.quotes-section {
+  display: flex;
+  flex-direction: column;
+  border: 0.5rem double var(--border-color);
+  margin: 0.5rem;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  width: 95%;
+}
+
+.quotes-section figcaption {
+  margin-top: 1rem;
+}
+
+.quotes-section hr {
+  width: 90%;
+}
+
+.social-section {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  gap: 0.5rem;
+  padding: 0.25rem;
+  align-items: center;
+  width: 95%;
+}
+
+.social-section figure {
+  border: 0.5rem double var(--border-color);
+}
+
+.social-section figure p {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 20rem;
+}
+
 /* table customization */
 
 .table-wrapper {

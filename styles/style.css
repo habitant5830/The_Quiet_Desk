@@ -157,6 +157,31 @@ a:active {
   width: 200px;
   height: auto;
   margin: 2rem auto;
+  animation-name: updown;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.home-picture:hover {
+  animation-play-state: paused;
+}
+
+.welcome-text {
+  color: yellowgreen;
+  animation-name: flip;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+.welcome-text:hover {
+  animation-play-state: paused;
 }
 
 /* profile */
@@ -285,6 +310,32 @@ td h4 {
   border: var(--border);
   padding: 1rem;
   border-radius: var(--border-radius);
+}
+
+/* animations */
+
+@keyframes updown {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes flip {
+  0% {
+  }
+  50% {
+    transform: scaleX(-1);
+    color: var(--primary-color);
+  }
+  100% {
+    color: red;
+  }
 }
 
 /*Responsive Designing*/

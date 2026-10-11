@@ -15,9 +15,9 @@
   --primary-color: #16b7cd;
   --bg-color: #f8ffe5;
   --code-bg-color: #e8ffa9;
-  --link: #c13153;
-  --link-hover: #dd5474;
-  --link-active: #95616d;
+  --link: darkblue;
+  --link-hover: darkmagenta;
+  --link-active: brown;
   --border-color: #1b9aaa;
   --table-heading: #1b9aaa;
   --table-heading-color: #ffffff;
@@ -111,12 +111,18 @@ header {
 
 nav {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   justify-content: center;
 }
 
 nav a {
   color: #ffffff;
+}
+
+nav h4:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-3px) scale(1.55);
+  padding: 0 1rem;
 }
 
 /* footer section */
@@ -330,6 +336,14 @@ tr:nth-child(even) {
   border: var(--border);
   padding: 1rem;
   border-radius: var(--border-radius);
+}
+
+.grid-column:hover {
+  transition: transform 0.3s ease;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow:
+    5px 5px 6px lightgoldenrodyellow,
+    -5px -5px 6px lightgoldenrodyellow;
 }
 
 /* animations */

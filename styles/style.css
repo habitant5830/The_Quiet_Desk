@@ -74,11 +74,12 @@ h6 {
 
 h1 {
   text-shadow:
-    3px 3px 5px lightsalmon,
-    -3px -3px 5px lightskyblue;
+    3px 3px 5px lightgoldenrodyellow,
+    -3px -3px 5px lightgreen;
   text-align: center;
   padding: 1rem;
   margin: 0;
+  color: darkblue;
 }
 
 /* code block */
@@ -191,7 +192,6 @@ a:active {
 }
 
 .welcome-text {
-  color: darkred;
   animation-name: flip;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
@@ -351,7 +351,7 @@ tr:nth-child(even) {
   }
   50% {
     transform: scaleX(-1);
-    color: darkblue;
+    color: darkred;
   }
   100% {
     color: darkgreen;

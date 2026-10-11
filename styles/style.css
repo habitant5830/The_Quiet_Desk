@@ -19,9 +19,6 @@
   --link-hover: darkmagenta;
   --link-active: brown;
   --border-color: #1b9aaa;
-  --table-heading: #1b9aaa;
-  --table-heading-color: #ffffff;
-  --table-sub-heading: #16b7cd;
 
   /* other variables */
   --border-radius: 12px;
@@ -294,6 +291,20 @@ th,
 td {
   padding: 15px 20px;
   border-bottom: 1px solid #dddddd;
+}
+
+.index-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status-text {
+  color: green;
+  font-weight: bold;
+  text-shadow:
+    3px 3px 5px lightgreen,
+    -3px -3px 5px lightseagreen;
 }
 
 th {

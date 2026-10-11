@@ -61,6 +61,26 @@ h6 {
   font-family: serif;
 }
 
+/* id selector */
+
+#box1 {
+  display: flex;
+  justify-content: center;
+  background-color: lightcyan;
+  box-shadow: 3px 3px 5px;
+  border-radius: var(--border-radius);
+  margin: 1rem 5rem 0;
+}
+
+h1 {
+  text-shadow:
+    3px 3px 5px lightsalmon,
+    -3px -3px 5px lightskyblue;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
 /* code block */
 
 .code {
@@ -74,11 +94,6 @@ h6 {
 code {
   background-color: var(--code-bg-color);
   padding: 0.5rem;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
 }
 
 blockquote {
@@ -176,7 +191,7 @@ a:active {
 }
 
 .welcome-text {
-  color: yellowgreen;
+  color: darkred;
   animation-name: flip;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
@@ -196,7 +211,6 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95%;
 }
 
 .profile-picture {
@@ -337,10 +351,10 @@ tr:nth-child(even) {
   }
   50% {
     transform: scaleX(-1);
-    color: var(--primary-color);
+    color: darkblue;
   }
   100% {
-    color: red;
+    color: darkgreen;
   }
 }
 
@@ -369,5 +383,9 @@ tr:nth-child(even) {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  #box1 {
+    margin: 1rem 1rem 0;
   }
 }

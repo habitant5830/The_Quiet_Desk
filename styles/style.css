@@ -69,14 +69,30 @@ h6 {
   margin: 1rem 5rem 0;
 }
 
+#box2 {
+  display: flex;
+  justify-content: center;
+  background-color: lightcyan;
+  box-shadow: 3px 3px 5px;
+  font-size: medium;
+  border-radius: var(--border-radius);
+  margin: 1rem 5rem 0;
+}
+
 h1 {
-  text-shadow:
-    3px 3px 5px lightgoldenrodyellow,
-    -3px -3px 5px lightgreen;
+  text-shadow: 3px 3px 5px lightgoldenrodyellow, -3px -3px 5px lightgreen;
   text-align: center;
   padding: 1rem;
   margin: 0;
   color: darkblue;
+}
+
+h2 {
+  text-shadow: 3px 3px 5px #fffad3, -3px -3px 5px #fffad3;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  color: #468432;
 }
 
 /* code block */
@@ -194,7 +210,7 @@ a:active {
   animation-play-state: paused;
 }
 
-.welcome-text {
+/*.welcome-text {
   animation-name: flip;
   animation-duration: 8s;
   animation-timing-function: ease-in-out;
@@ -202,7 +218,7 @@ a:active {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-play-state: running;
-}
+}*/
 
 .welcome-text:hover {
   animation-play-state: paused;
@@ -302,9 +318,7 @@ td {
 .status-text {
   color: green;
   font-weight: bold;
-  text-shadow:
-    3px 3px 5px lightgreen,
-    -3px -3px 5px lightseagreen;
+  text-shadow: 3px 3px 5px lightgreen, -3px -3px 5px lightseagreen;
 }
 
 th {
@@ -352,8 +366,7 @@ tr:nth-child(even) {
 .grid-column:hover {
   transition: transform 0.3s ease;
   transform: translateY(-3px) scale(1.05);
-  box-shadow:
-    5px 5px 6px lightgoldenrodyellow,
+  box-shadow: 5px 5px 6px lightgoldenrodyellow,
     -5px -5px 6px lightgoldenrodyellow;
 }
 
@@ -371,7 +384,7 @@ tr:nth-child(even) {
   }
 }
 
-@keyframes flip {
+/*@keyframes flip {
   0% {
   }
   50% {
@@ -381,7 +394,7 @@ tr:nth-child(even) {
   100% {
     color: darkgreen;
   }
-}
+}*/
 
 /*Responsive Designing*/
 
@@ -412,5 +425,9 @@ tr:nth-child(even) {
 
   #box1 {
     margin: 1rem 1rem 0;
+  }
+
+  nav {
+    gap: 2rem;
   }
 }
